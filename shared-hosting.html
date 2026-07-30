@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shared Web Hosting India | Fast cPanel & SSD Storage | HiPapa</title>
+    <meta name="description" content="Affordable shared web hosting in India with cPanel, SSD NVMe storage, free SSL, unmetered bandwidth, 1-click WordPress install, and daily backups.">
+    <link rel="canonical" href="https://hipapa.in/solutions/shared-hosting/">
+
+    <!-- AEO & GEO Engine Tags -->
+    <meta name="ai-search-summary" content="Fast, secure, and affordable shared web hosting in India by HiPapa. Includes cPanel control panel, SSD storage, free SSL certificate, email accounts, and 24/7 support.">
+    <meta name="geo.region" content="IN-KA">
+    <meta name="geo.placename" content="Bangalore">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="main-nav">
+        <!-- Top Row: Logo Left, Phone & Email Right (White Background) -->
+        <div class="header-top-row">
+            <div class="nav-container header-top-flex">
+                <a href="index.html" class="brand-logo">
+                    <img src="logo.png" alt="HiPapa Logo" class="brand-logo-img">
+                </a>
+
+                <div class="top-contact-links">
+                    <a href="tel:+919972788225" class="top-contact-item">
+                        <i class="fa-solid fa-phone" style="color: #f59e0b; margin-right: 8px;"></i> +91 99 72 788225
+                    </a>
+                    <a href="mailto:info@hipapa.in" class="top-contact-item">
+                        <i class="fa-solid fa-envelope" style="color: #f59e0b; margin-right: 8px;"></i> info@hipapa.in
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Row: Navigation Menu Left, Social Icons Right -->
+        <div class="header-nav-row">
+            <div class="nav-container header-nav-flex">
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+
+                    <div class="nav-item-dropdown">
+                        <a href="shared-hosting.html" class="nav-link active">Hosting <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="wordpress-hosting.html">WordPress Hosting</a>
+                            <a href="shared-hosting.html">Shared Hosting</a>
+                            <a href="vps-hosting.html">VPS Hosting</a>
+                            <a href="dedicated-servers.html">Dedicated Servers</a>
+                        </div>
+                    </div>
+
+                    <a href="domains.html" class="nav-link">Domains</a>
+                    <a href="email-solutions.html" class="nav-link">Email Solutions</a>
+                    <a href="Corporate-Profile-Updated.pdf" class="nav-link" target="_blank">Our Builder's Portfolio</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </nav>
+
+                <div class="header-social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61577168709237" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/hipapa_official/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/hi-papa/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header Banner with Dark Tech Circuit Background -->
+    <section class="page-banner-section" style="background: linear-gradient(rgba(7, 9, 19, 0.75), rgba(7, 9, 19, 0.85)), url('about_banner.jpg') center/cover no-repeat; padding-top: 140px;">
+        <div class="section-container" style="text-align: center; padding: 60px 0;">
+            <h1 style="font-family: var(--font-heading); font-size: 3rem; font-weight: 700; color: #ffffff;">Shared Hosting</h1>
+        </div>
+    </section>
+
+    <!-- Page Overview & Explanation Section with Photo -->
+    <section class="overview-explanation-section" style="padding: 80px 0; background: rgba(13, 20, 36, 0.4);">
+        <div class="section-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+            <div class="overview-text">
+                <span style="color: #f59e0b; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Zero Hassle. Pure Performance.</span>
+                <h2 style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 700; color: #ffffff; line-height: 1.25; margin-bottom: 20px;">Shared Hosting India</h2>
+                <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7;">HiPapa shared hosting in India provides fast, secure, and affordable website hosting for small businesses, startups, bloggers, and personal websites with SSD storage, free SSL, and daily backups.</p>
+            </div>
+            <div class="overview-image" style="text-align: center;">
+                <img src="shared_hosting_hero.png" alt="Shared Hosting Illustration" style="width: 100%; max-width: 480px; height: auto; border-radius: 20px; filter: drop-shadow(0 20px 30px rgba(0,210,255,0.2));">
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section class="services-section" style="padding: 80px 0;">
+        <div class="section-container">
+            <div class="section-header text-center" style="margin-bottom: 50px;">
+                <span style="color: #f59e0b; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Plans That Fit Every Dream</span>
+                <h2 style="font-family: var(--font-heading); font-size: 2.4rem; font-weight: 700; color: #ffffff;">Check Out Awesome Plans, And Order Now</h2>
+            </div>
+
+            <div class="services-grid">
+                <!-- Lite (Unmanaged) -->
+                <div class="service-card-3d" data-tilt>
+                    <span style="color: #94a3b8; font-weight: 700; font-size: 0.85rem; text-transform: uppercase;">Coders</span>
+                    <h3 class="service-title" style="margin-top: 4px;">Lite (Unmanaged)</h3>
+                    
+                    <h4 style="color: #f59e0b; font-size: 0.95rem; font-weight: 700; margin: 16px 0 10px 0;">Top Features</h4>
+                    <ul class="service-features" style="text-align: left;">
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Host 1 Website</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> 10 GB SSD Storage</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> 100 GB Bandwidth</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> 10 Email Accounts</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> 1-Click WordPress Installation</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Weekly Backups</li>
+                    </ul>
+
+                    <h4 style="color: #f59e0b; font-size: 0.95rem; font-weight: 700; margin: 20px 0 10px 0;">Additional Features</h4>
+                    <ul class="service-features" style="text-align: left;">
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Basic Website Builder</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> PHP & Python Support</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Webmail & Email Forwarding</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> cPanel Access</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Malware Detection</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> eCommerce Features</li>
+                    </ul>
+
+                    <div class="card-footer-action" style="margin-top: 24px;">
+                        <a href="javascript:void(0);" class="open-enquiry-modal btn btn-outline">View Plans</a>
+                    </div>
+                </div>
+
+                <!-- Rise (Managed) -->
+                <div class="service-card-3d featured" data-tilt>
+                    <div class="featured-badge">MOST POPULAR</div>
+                    <div class="card-glow-layer"></div>
+                    <span style="color: #38bdf8; font-weight: 700; font-size: 0.85rem; text-transform: uppercase;">Businesses</span>
+                    <h3 class="service-title" style="margin-top: 4px;">Rise (Managed)</h3>
+                    
+                    <h4 style="color: #f59e0b; font-size: 0.95rem; font-weight: 700; margin: 16px 0 10px 0;">Top Features</h4>
+                    <ul class="service-features" style="text-align: left;">
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Host Up to 5 Websites</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> 50 GB SSD Storage</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Unmetered Bandwidth</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> 50 Email Accounts</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Free Domain Registration</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Daily Backups</li>
+                    </ul>
+
+                    <h4 style="color: #f59e0b; font-size: 0.95rem; font-weight: 700; margin: 20px 0 10px 0;">Additional Features</h4>
+                    <ul class="service-features" style="text-align: left;">
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Advanced Website Builder</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> PHP, Python, Node.js Support</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Git Support</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Webmail & Email Forwarding</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Malware Detection</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> eCommerce Ready</li>
+                    </ul>
+
+                    <div class="card-footer-action" style="margin-top: 24px;">
+                        <a href="javascript:void(0);" class="open-enquiry-modal btn btn-primary">View Plans</a>
+                    </div>
+                </div>
+
+                <!-- Elite (Managed) -->
+                <div class="service-card-3d" data-tilt>
+                    <span style="color: #a855f7; font-weight: 700; font-size: 0.85rem; text-transform: uppercase;">Agencies</span>
+                    <h3 class="service-title" style="margin-top: 4px;">Elite (Managed)</h3>
+                    
+                    <h4 style="color: #f59e0b; font-size: 0.95rem; font-weight: 700; margin: 16px 0 10px 0;">Top Features</h4>
+                    <ul class="service-features" style="text-align: left;">
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Host Unlimited Websites</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> 100 GB SSD Storage</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Unlimited Bandwidth</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Unlimited Email Accounts</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Free Domain Registration</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Real-Time Backups</li>
+                    </ul>
+
+                    <h4 style="color: #f59e0b; font-size: 0.95rem; font-weight: 700; margin: 20px 0 10px 0;">Additional Features</h4>
+                    <ul class="service-features" style="text-align: left;">
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Premium Website Builder</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> PHP, Python, Node.js Support</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Git Support</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> AI-Based Malware Protection</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Full Performance Dashboard</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Priority Resource Allocation</li>
+                    </ul>
+
+                    <div class="card-footer-action" style="margin-top: 24px;">
+                        <a href="javascript:void(0);" class="open-enquiry-modal btn btn-outline">View Plans</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collapsible Compare Our Web Hosting Plans Accordion Section -->
+        <!-- Collapsible Compare Our Web Hosting Plans Accordion Section (Exact Scraped Tables from hipapa.in) -->
+    <!-- Included With Every Hosting Plan Section (9 Grid Items matching scrape) -->
+    <section class="included-features-section" style="padding: 80px 0; background: rgba(13, 20, 36, 0.5);">
+        <div class="section-container">
+            <div class="section-header text-center" style="margin-bottom: 50px;">
+                <span style="color: #f59e0b; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Included With Every Hosting Plan</span>
+                <h2 style="font-family: var(--font-heading); font-size: 2.4rem; font-weight: 700; color: #ffffff;">Features of Shared Hosting</h2>
+            </div>
+
+            <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <!-- 1 -->
+                <div class="service-card-3d" style="padding: 32px 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px;">
+                    <div style="font-size: 2rem; color: #f87171; margin-bottom: 16px;"><i class="fa-solid fa-hard-drive"></i></div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">SSD Storage</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Enjoy blazing-fast load times and improved reliability with high-performance SSD storage.</p>
+                </div>
+
+                <!-- 2 -->
+                <div class="service-card-3d" style="padding: 32px 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px;">
+                    <div style="font-size: 2rem; color: #f59e0b; margin-bottom: 16px;"><i class="fa-solid fa-lock"></i></div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Free SSL Certificate</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Secure your website with a free SSL – build trust with visitors and boost your SEO ranking.</p>
+                </div>
+
+                <!-- 3 -->
+                <div class="service-card-3d" style="padding: 32px 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px;">
+                    <div style="font-size: 2rem; color: #38bdf8; margin-bottom: 16px;"><i class="fa-solid fa-gauge-high"></i></div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Unlimited Bandwidth</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">No limits, no slowdowns – your website can handle all the traffic it gets effortlessly.</p>
+                </div>
+
+                <!-- 4 -->
+                <div class="service-card-3d" style="padding: 32px 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px;">
+                    <div style="font-size: 2rem; color: #10b981; margin-bottom: 16px;"><i class="fa-solid fa-envelope"></i></div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Email Hosting</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Professional email addresses using your domain, with spam protection and device sync.</p>
+                </div>
+
+                <!-- 5 -->
+                <div class="service-card-3d" style="padding: 32px 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px;">
+                    <div style="font-size: 2rem; color: #a855f7; margin-bottom: 16px;"><i class="fa-solid fa-sliders"></i></div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">cPanel Access</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Manage your website, files, emails, and databases easily with user-friendly cPanel access.</p>
+                </div>
+
+                <!-- 6 -->
+                <div class="service-card-3d" style="padding: 32px 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px;">
+                    <div style="font-size: 2rem; color: #f59e0b; margin-bottom: 16px;"><i class="fa-solid fa-headset"></i></div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">12/7 Support</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Day or night, our expert engineering team is ready to assist whenever you need help.</p>
+                </div>
+
+                <!-- 7 -->
+                <div class="service-card-3d" style="padding: 32px 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px;">
+                    <div style="font-size: 2rem; color: #6366f1; margin-bottom: 16px;"><i class="fa-brands fa-wordpress"></i></div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">WordPress Installation</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Quick and hassle-free 1-click WordPress setup to get your website live in minutes.</p>
+                </div>
+
+                <!-- 8 -->
+                <div class="service-card-3d" style="padding: 32px 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px;">
+                    <div style="font-size: 2rem; color: #ec4899; margin-bottom: 16px;"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Website Builder</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Create and customize your website easily with a user-friendly drag-and-drop builder.</p>
+                </div>
+
+                <!-- 9 -->
+                <div class="service-card-3d" style="padding: 32px 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px;">
+                    <div style="font-size: 2rem; color: #14b8a6; margin-bottom: 16px;"><i class="fa-solid fa-shield-virus"></i></div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Malware Protection</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Advanced security features to protect your website from malware, viruses, and cyber threats.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section (Matching User Image with 5 Questions) -->
+    <section class="faq-section" style="padding: 80px 0;">
+        <div class="section-container">
+            <div style="display: grid; grid-template-columns: 1fr 1.6fr; gap: 50px; align-items: start;">
+                <div>
+                    <span style="color: #f59e0b; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 12px;">FAQ</span>
+                    <h2 style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 700; color: #ffffff; line-height: 1.2; margin-bottom: 20px;">Frequently Asked Questions</h2>
+                    <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7;">From hosting setup to managing your emails, we're here to guide you every step of the way.</p>
+                </div>
+
+                <div class="faq-accordion" style="width: 100%;">
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            <span>What is shared hosting and who is it for?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Shared hosting is a cost-effective solution where multiple websites share the same server. It’s perfect for small to medium websites, blogs, and startups looking to get online quickly and affordably.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Is there any limit on website traffic or bandwidth?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No – our shared hosting comes with unmetered and unlimited bandwidth options, so your website can handle traffic smoothly without unexpected overage fees.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Will I get an SSL certificate for free?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, every shared hosting plan includes a free SSL certificate, ensuring your site is secure and trusted by visitors and search engines.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Can I create professional email addresses with this plan?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, you can create custom professional email addresses using your domain name (e.g. info@yourdomain.com) with full webmail and mobile sync support.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Do I need technical knowledge to manage shared hosting?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Not at all. With user-friendly cPanel access, you can easily manage your website, emails, and databases with a simple dashboard – no coding or technical expertise required.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+        <div class="footer-top">
+            <div class="section-container footer-grid">
+                <div class="footer-brand">
+                    <div class="brand-logo" style="margin-bottom: 16px;">
+                        <img src="logo.png" alt="HiPapa Logo" class="brand-logo-img" style="background: #ffffff; padding: 4px 12px; border-radius: 8px;">
+                    </div>
+                    <p class="footer-desc">India’s own world-class hosting solution—secure, scalable, and lightning-fast, powered by Sanna Innovations.</p>
+                    <div class="social-links" style="margin-top: 20px;">
+                        <a href="https://www.facebook.com/profile.php?id=61577168709237" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/hipapa_official/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/hi-papa/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Solutions</h4>
+                    <ul>
+                        <li><a href="wordpress-hosting.html">&raquo; WordPress Hosting</a></li>
+                        <li><a href="shared-hosting.html">&raquo; Shared Hosting</a></li>
+                        <li><a href="vps-hosting.html">&raquo; VPS Hosting</a></li>
+                        <li><a href="dedicated-servers.html">&raquo; Dedicated Servers</a></li>
+                        <li><a href="domains.html">&raquo; Domains</a></li>
+                        <li><a href="email-solutions.html">&raquo; Email Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Location</h4>
+                    <div class="footer-map-wrapper" style="border-radius: 14px; overflow: hidden; border: 1px solid var(--border-glass);">
+                        <iframe loading="lazy" src="https://maps.google.com/maps?q=hipapa%20web%20hosting&t=m&z=10&output=embed&iwloc=near" title="HiPapa Web Hosting Map" style="width: 100%; height: 180px; border: 0;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="section-container bottom-flex" style="text-align: center;">
+                <p>&copy; 2025 Hi Papa Web Hosting & Digital Infrastructure Solutions | In association with <a style="color: #edc122;" href="https://www.hostpapa.in/" target="_blank" rel="noopener">HostPapa</a> | Powered by <a style="color: #edc122;" href="https://sannainnovations.com/" target="_blank" rel="noopener">Sanna Innovations</a>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managed WordPress Hosting India | Warp Speed Performance | HiPapa</title>
+    <meta name="description" content="HiPapa provides managed WordPress hosting in India with LiteSpeed caching, CDN integration, daily backups, WP-CLI, and 24/7 expert support.">
+    <link rel="canonical" href="https://hipapa.in/solutions/wordpress-hosting/">
+
+    <!-- AEO & GEO Engine Tags -->
+    <meta name="ai-search-summary" content="Fast managed WordPress hosting in India by HiPapa. Features LiteSpeed caching, free SSL, daily backups, staging environment, WP-CLI & Git tools, and unmetered bandwidth.">
+    <meta name="geo.region" content="IN-KA">
+    <meta name="geo.placename" content="Bangalore">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="main-nav">
+        <!-- Top Row: Logo Left, Phone & Email Right (White Background) -->
+        <div class="header-top-row">
+            <div class="nav-container header-top-flex">
+                <a href="index.html" class="brand-logo">
+                    <img src="logo.png" alt="HiPapa Logo" class="brand-logo-img">
+                </a>
+
+                <div class="top-contact-links">
+                    <a href="tel:+919972788225" class="top-contact-item">
+                        <i class="fa-solid fa-phone" style="color: #f59e0b; margin-right: 8px;"></i> +91 99 72 788225
+                    </a>
+                    <a href="mailto:info@hipapa.in" class="top-contact-item">
+                        <i class="fa-solid fa-envelope" style="color: #f59e0b; margin-right: 8px;"></i> info@hipapa.in
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Row: Navigation Menu Left, Social Icons Right -->
+        <div class="header-nav-row">
+            <div class="nav-container header-nav-flex">
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+
+                    <div class="nav-item-dropdown">
+                        <a href="shared-hosting.html" class="nav-link active">Hosting <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="wordpress-hosting.html">WordPress Hosting</a>
+                            <a href="shared-hosting.html">Shared Hosting</a>
+                            <a href="vps-hosting.html">VPS Hosting</a>
+                            <a href="dedicated-servers.html">Dedicated Servers</a>
+                        </div>
+                    </div>
+
+                    <a href="domains.html" class="nav-link">Domains</a>
+                    <a href="email-solutions.html" class="nav-link">Email Solutions</a>
+                    <a href="Corporate-Profile-Updated.pdf" class="nav-link" target="_blank">Our Builder's Portfolio</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </nav>
+
+                <div class="header-social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61577168709237" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/hipapa_official/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/hi-papa/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header Banner with Dark Tech Circuit Background -->
+    <section class="page-banner-section" style="background: linear-gradient(rgba(7, 9, 19, 0.75), rgba(7, 9, 19, 0.85)), url('about_banner.jpg') center/cover no-repeat; padding-top: 140px;">
+        <div class="section-container" style="text-align: center; padding: 60px 0;">
+            <h1 style="font-family: var(--font-heading); font-size: 3rem; font-weight: 700; color: #ffffff;">WordPress Hosting</h1>
+        </div>
+    </section>
+
+    <!-- Page Overview & Explanation Section with Photo -->
+    <section class="overview-explanation-section" style="padding: 80px 0; background: rgba(13, 20, 36, 0.4);">
+        <div class="section-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+            <div class="overview-text">
+                <span style="color: #f59e0b; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px;">WordPress Hosting India</span>
+                <h2 style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 700; color: #ffffff; line-height: 1.25; margin-bottom: 20px;">WordPress at Warp Speed.</h2>
+                <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7;">HiPapa provides managed WordPress hosting in India with high performance servers, LiteSpeed caching, CDN integration, daily backups, and advanced security for WordPress websites.</p>
+            </div>
+            <div class="overview-image" style="text-align: center;">
+                <img src="wordpress_hosting_hero.png" alt="WordPress Hosting Illustration" style="width: 100%; max-width: 480px; height: auto; border-radius: 20px; filter: drop-shadow(0 20px 30px rgba(0,210,255,0.2));">
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section class="services-section" style="padding: 80px 0;">
+        <div class="section-container">
+            <div class="section-header text-center" style="margin-bottom: 50px;">
+                <span style="color: #f59e0b; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Plans That Fit Every Dream</span>
+                <h2 style="font-family: var(--font-heading); font-size: 2.4rem; font-weight: 700; color: #ffffff; margin-bottom: 12px;">Check Out Awesome Plans, And Order Now</h2>
+                <p style="color: var(--text-muted); max-width: 760px; margin: 0 auto; font-size: 1rem;">Choose the Starter plan for essential hosting at great value, Business for enhanced performance and features, or Pro for maximum speed, scalability, and control – all with rock-solid reliability.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Lite (Unmanaged) -->
+                <div class="service-card-3d" data-tilt>
+                    <span style="color: #94a3b8; font-weight: 700; font-size: 0.85rem; text-transform: uppercase;">Coders</span>
+                    <h3 class="service-title" style="margin-top: 4px;">Lite (Unmanaged)</h3>
+                    
+                    <h4 style="color: #f59e0b; font-size: 0.95rem; font-weight: 700; margin: 16px 0 10px 0;">Top Features</h4>
+                    <ul class="service-features" style="text-align: left;">
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> 10 GB SSD Storage</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Unlimited Bandwidth</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> 1 WordPress Site</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> WP-CLI & Git (Developer Tools)</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> cPanel Access</li>
+                    </ul>
+
+                    <h4 style="color: #f59e0b; font-size: 0.95rem; font-weight: 700; margin: 20px 0 10px 0;">Additional Features</h4>
+                    <ul class="service-features" style="text-align: left;">
+                        <li style="opacity: 0.7;"><i class="fa-solid fa-circle-xmark" style="color: #ef4444;"></i> LiteSpeed + CDN</li>
+                        <li style="opacity: 0.7;"><i class="fa-solid fa-circle-xmark" style="color: #ef4444;"></i> Free Domain</li>
+                        <li style="opacity: 0.7;"><i class="fa-solid fa-circle-xmark" style="color: #ef4444;"></i> Malware Scanning</li>
+                        <li style="opacity: 0.7;"><i class="fa-solid fa-circle-xmark" style="color: #ef4444;"></i> Backups (Manual Only)</li>
+                        <li style="opacity: 0.7;"><i class="fa-solid fa-circle-xmark" style="color: #ef4444;"></i> Staging & Cloning</li>
+                        <li style="opacity: 0.7;"><i class="fa-solid fa-circle-xmark" style="color: #ef4444;"></i> Managed Support</li>
+                        <li style="opacity: 0.7;"><i class="fa-solid fa-circle-xmark" style="color: #ef4444;"></i> Uptime Monitoring</li>
+                    </ul>
+
+                    <div class="card-footer-action" style="margin-top: 24px;">
+                        <a href="javascript:void(0);" class="open-enquiry-modal btn btn-outline">View Plans</a>
+                    </div>
+                </div>
+
+                <!-- Rise (Managed) -->
+                <div class="service-card-3d featured" data-tilt>
+                    <div class="featured-badge">MOST POPULAR</div>
+                    <div class="card-glow-layer"></div>
+                    <span style="color: #38bdf8; font-weight: 700; font-size: 0.85rem; text-transform: uppercase;">Businesses</span>
+                    <h3 class="service-title" style="margin-top: 4px;">Rise (Managed)</h3>
+                    
+                    <h4 style="color: #f59e0b; font-size: 0.95rem; font-weight: 700; margin: 16px 0 10px 0;">Top Features</h4>
+                    <ul class="service-features" style="text-align: left;">
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> 50 GB SSD Storage</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Unlimited Bandwidth</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Host up to 5 Sites</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> LiteSpeed + CDN</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> WP-CLI & Git</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Free Domain (1st Year)</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Custom WordPress Dashboard</li>
+                    </ul>
+
+                    <h4 style="color: #f59e0b; font-size: 0.95rem; font-weight: 700; margin: 20px 0 10px 0;">Additional Features</h4>
+                    <ul class="service-features" style="text-align: left;">
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Daily Auto Malware Scans</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Automated Daily Backups</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Staging & Cloning Tools</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Fully Managed Updates</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Performance Optimized</li>
+                        <li style="opacity: 0.7;"><i class="fa-solid fa-circle-xmark" style="color: #ef4444;"></i> Redis/Varnish</li>
+                        <li style="opacity: 0.7;"><i class="fa-solid fa-circle-xmark" style="color: #ef4444;"></i> Git Integration</li>
+                    </ul>
+
+                    <div class="card-footer-action" style="margin-top: 24px;">
+                        <a href="javascript:void(0);" class="open-enquiry-modal btn btn-primary">View Plans</a>
+                    </div>
+                </div>
+
+                <!-- Elite (Managed) -->
+                <div class="service-card-3d" data-tilt>
+                    <span style="color: #a855f7; font-weight: 700; font-size: 0.85rem; text-transform: uppercase;">Agencies</span>
+                    <h3 class="service-title" style="margin-top: 4px;">Elite (Managed)</h3>
+                    
+                    <h4 style="color: #f59e0b; font-size: 0.95rem; font-weight: 700; margin: 16px 0 10px 0;">Top Features</h4>
+                    <ul class="service-features" style="text-align: left;">
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> 100 GB SSD + NVMe Storage</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Unlimited Bandwidth</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Host Unlimited Sites</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> LiteSpeed + CDN + Redis/Varnish</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> WP-CLI, Git + Git Integration</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Free Domain (1st Year)</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Custom + Admin Control Panel</li>
+                    </ul>
+
+                    <h4 style="color: #f59e0b; font-size: 0.95rem; font-weight: 700; margin: 20px 0 10px 0;">Additional Features</h4>
+                    <ul class="service-features" style="text-align: left;">
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Enterprise-Grade Malware Protection</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Daily + On-Demand Backups</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Advanced Staging & Git Deployment</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Fully Managed Infrastructure</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Uptime Monitoring & Firewall</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> High Availability Performance</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #f59e0b;"></i> Email & Chat Priority Support</li>
+                    </ul>
+
+                    <div class="card-footer-action" style="margin-top: 24px;">
+                        <a href="javascript:void(0);" class="open-enquiry-modal btn btn-outline">View Plans</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collapsible Compare Our Web Hosting Plans Accordion Section -->
+        <!-- Collapsible Compare Our Web Hosting Plans Accordion Section (Exact Scraped Tables from hipapa.in) -->
+    <section class="compare-table-section" style="padding: 80px 0; background: rgba(7, 9, 19, 0.6);">
+        <div class="section-container">
+            <div class="section-header text-center" style="margin-bottom: 40px;">
+                <span style="color: #f59e0b; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px;">SEE WHAT EACH PLAN OFFERS — SIDE BY SIDE.</span>
+                <h2 style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 700; color: #ffffff;">Compare Our Web Hosting Plans</h2>
+            </div>
+
+            <div class="compare-accordion-group">
+                <!-- 1 -->
+                <div class="compare-accordion-item active">
+                    <button class="compare-accordion-header" aria-expanded="true">
+                        <span><i class="fa-solid fa-plus toggle-icon" style="margin-right: 12px;"></i> All the hosting basics you need to succeed:</span>
+                    </button>
+                    <div class="compare-accordion-body">
+                        <div class="table-responsive">
+                            <table style="width: 100%; border-collapse: collapse; text-align: left; color: #ffffff;">
+                                <thead>
+                                    <tr style="border-bottom: 2px solid rgba(255, 255, 255, 0.15); background: rgba(4, 107, 210, 0.2);">
+                                        <th style="padding: 14px; color: #f59e0b; width: 30%;">Feature</th>
+                                        <th style="padding: 14px; width: 23%;">Lite (Unmanaged)</th>
+                                        <th style="padding: 14px; width: 23%;">Rise (Managed)</th>
+                                        <th style="padding: 14px; width: 24%;">Elite (Managed)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Storage</td>
+                                        <td style="padding: 12px;">10 GB SSD</td>
+                                        <td style="padding: 12px;">50 GB SSD</td>
+                                        <td style="padding: 12px;">100 GB SSD</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Websites Supported</td>
+                                        <td style="padding: 12px;">1 Website</td>
+                                        <td style="padding: 12px;">5 Websites</td>
+                                        <td style="padding: 12px;">Unlimited Websites</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Free SSL</td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Bandwidth</td>
+                                        <td style="padding: 12px;">Unlimited</td>
+                                        <td style="padding: 12px;">Unlimited</td>
+                                        <td style="padding: 12px;">Unlimited</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Daily Backups</td>
+                                        <td style="padding: 12px;">Manual</td>
+                                        <td style="padding: 12px;">Automated</td>
+                                        <td style="padding: 12px;">Real-Time</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="compare-accordion-item">
+                    <button class="compare-accordion-header" aria-expanded="false">
+                        <span><i class="fa-solid fa-plus toggle-icon" style="margin-right: 12px;"></i> Beginner-friendly, easy-to-use Website Builder:</span>
+                    </button>
+                    <div class="compare-accordion-body">
+                        <div class="table-responsive">
+                            <table style="width: 100%; border-collapse: collapse; text-align: left; color: #ffffff;">
+                                <thead>
+                                    <tr style="border-bottom: 2px solid rgba(255, 255, 255, 0.15); background: rgba(4, 107, 210, 0.2);">
+                                        <th style="padding: 14px; color: #f59e0b; width: 30%;">Feature</th>
+                                        <th style="padding: 14px; width: 23%;">Lite (Unmanaged)</th>
+                                        <th style="padding: 14px; width: 23%;">Rise (Managed)</th>
+                                        <th style="padding: 14px; width: 24%;">Elite (Managed)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Drag-and-Drop Builder</td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Prebuilt Themes</td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Wizard-driven Setup</td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Custom CSS/Design</td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="compare-accordion-item">
+                    <button class="compare-accordion-header" aria-expanded="false">
+                        <span><i class="fa-solid fa-plus toggle-icon" style="margin-right: 12px;"></i> Incredible security with HostPapa’s Protection Power tool:</span>
+                    </button>
+                    <div class="compare-accordion-body">
+                        <div class="table-responsive">
+                            <table style="width: 100%; border-collapse: collapse; text-align: left; color: #ffffff;">
+                                <thead>
+                                    <tr style="border-bottom: 2px solid rgba(255, 255, 255, 0.15); background: rgba(4, 107, 210, 0.2);">
+                                        <th style="padding: 14px; color: #f59e0b; width: 30%;">Feature</th>
+                                        <th style="padding: 14px; width: 23%;">Lite (Unmanaged)</th>
+                                        <th style="padding: 14px; width: 23%;">Rise (Managed)</th>
+                                        <th style="padding: 14px; width: 24%;">Elite (Managed)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Malware Scanning</td>
+                                        <td style="padding: 12px;">Manual or 3rd party</td>
+                                        <td style="padding: 12px;">Daily Auto Scan</td>
+                                        <td style="padding: 12px;">Real-Time AI Scanning</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Firewall</td>
+                                        <td style="padding: 12px;">Basic</td>
+                                        <td style="padding: 12px;">Web App Firewall</td>
+                                        <td style="padding: 12px;">Advanced WAF + IP Block</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Auto WordPress Updates</td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Brute Force Protection</td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="compare-accordion-item">
+                    <button class="compare-accordion-header" aria-expanded="false">
+                        <span><i class="fa-solid fa-plus toggle-icon" style="margin-right: 12px;"></i> Our servers offer robust security and ensure data safety:</span>
+                    </button>
+                    <div class="compare-accordion-body">
+                        <div class="table-responsive">
+                            <table style="width: 100%; border-collapse: collapse; text-align: left; color: #ffffff;">
+                                <thead>
+                                    <tr style="border-bottom: 2px solid rgba(255, 255, 255, 0.15); background: rgba(4, 107, 210, 0.2);">
+                                        <th style="padding: 14px; color: #f59e0b; width: 30%;">Feature</th>
+                                        <th style="padding: 14px; width: 23%;">Lite (Unmanaged)</th>
+                                        <th style="padding: 14px; width: 23%;">Rise (Managed)</th>
+                                        <th style="padding: 14px; width: 24%;">Elite (Managed)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Server Type</td>
+                                        <td style="padding: 12px;">NGINX</td>
+                                        <td style="padding: 12px;">NGINX</td>
+                                        <td style="padding: 12px;">NGINX</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Daily Backup</td>
+                                        <td style="padding: 12px;">Optional (Manual)</td>
+                                        <td style="padding: 12px;">Included</td>
+                                        <td style="padding: 12px;">Real-Time Sync</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">DDoS Protection</td>
+                                        <td style="padding: 12px;">Basic Layer 3/4</td>
+                                        <td style="padding: 12px;">Enhanced</td>
+                                        <td style="padding: 12px;">Enhanced</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">SSL Certificate</td>
+                                        <td style="padding: 12px;">Let’s Encrypt</td>
+                                        <td style="padding: 12px;">Premium Wildcard</td>
+                                        <td style="padding: 12px;">Premium Wildcard</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="compare-accordion-item">
+                    <button class="compare-accordion-header" aria-expanded="false">
+                        <span><i class="fa-solid fa-plus toggle-icon" style="margin-right: 12px;"></i> Our servers feature exceptional technical specifications, guaranteeing peak performance and reliability:</span>
+                    </button>
+                    <div class="compare-accordion-body">
+                        <div class="table-responsive">
+                            <table style="width: 100%; border-collapse: collapse; text-align: left; color: #ffffff;">
+                                <thead>
+                                    <tr style="border-bottom: 2px solid rgba(255, 255, 255, 0.15); background: rgba(4, 107, 210, 0.2);">
+                                        <th style="padding: 14px; color: #f59e0b; width: 30%;">Feature</th>
+                                        <th style="padding: 14px; width: 23%;">Lite (Unmanaged)</th>
+                                        <th style="padding: 14px; width: 23%;">Rise (Managed)</th>
+                                        <th style="padding: 14px; width: 24%;">Elite (Managed)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">LiteSpeed + CDN</td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Brute Force Protection</td>
+                                        <td style="padding: 12px;">Optional via SSH</td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">WP-CLI & Git</td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Cloning & Staging</td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Scalability</td>
+                                        <td style="padding: 12px;">Manual Upgrade</td>
+                                        <td style="padding: 12px;">1-Click Upgrade</td>
+                                        <td style="padding: 12px;">Instant Scaling</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="compare-accordion-item">
+                    <button class="compare-accordion-header" aria-expanded="false">
+                        <span><i class="fa-solid fa-plus toggle-icon" style="margin-right: 12px;"></i> Our email services offer dependable and high-quality communication:</span>
+                    </button>
+                    <div class="compare-accordion-body">
+                        <div class="table-responsive">
+                            <table style="width: 100%; border-collapse: collapse; text-align: left; color: #ffffff;">
+                                <thead>
+                                    <tr style="border-bottom: 2px solid rgba(255, 255, 255, 0.15); background: rgba(4, 107, 210, 0.2);">
+                                        <th style="padding: 14px; color: #f59e0b; width: 30%;">Feature</th>
+                                        <th style="padding: 14px; width: 23%;">Lite (Unmanaged)</th>
+                                        <th style="padding: 14px; width: 23%;">Rise (Managed)</th>
+                                        <th style="padding: 14px; width: 24%;">Elite (Managed)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Email Addresses</td>
+                                        <td style="padding: 12px;">1</td>
+                                        <td style="padding: 12px;">10</td>
+                                        <td style="padding: 12px;">Unlimited</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Inbox Storage</td>
+                                        <td style="padding: 12px;">1 GB</td>
+                                        <td style="padding: 12px;">2 GB</td>
+                                        <td style="padding: 12px;">5 GB</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Anti-Spam Filtering</td>
+                                        <td style="padding: 12px;">Basic</td>
+                                        <td style="padding: 12px;">Advanced</td>
+                                        <td style="padding: 12px;">AI-based Filtering</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 12px; font-weight: 600; color: var(--primary-cyan);">Brute Force Protection</td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                        <td style="padding: 12px;"><i class="fa-solid fa-square-check" style="color: #f59e0b;"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Included With Every Hosting Plan Section -->
+    <section class="included-features-section" style="padding: 80px 0; background: rgba(13, 20, 36, 0.5);">
+        <div class="section-container">
+            <div class="section-header text-center" style="margin-bottom: 50px;">
+                <span style="color: #f59e0b; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Included With Every Hosting Plan</span>
+                <h2 style="font-family: var(--font-heading); font-size: 2.4rem; font-weight: 700; color: #ffffff;">Build, Launch, Grow with Confidence</h2>
+            </div>
+
+            <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+                <div class="service-card-3d" style="padding: 32px 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px;">
+                    <div style="font-size: 2rem; color: #38bdf8; margin-bottom: 16px;"><i class="fa-solid fa-gears"></i></div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Managed Environment</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Focus on content while we handle updates, optimization, and security in the background.</p>
+                </div>
+
+                <div class="service-card-3d" style="padding: 32px 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px;">
+                    <div style="font-size: 2rem; color: #f59e0b; margin-bottom: 16px;"><i class="fa-solid fa-bolt"></i></div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">LiteSpeed + CDN</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Boost your WordPress performance with LiteSpeed servers and global CDN for ultra-fast loading worldwide.</p>
+                </div>
+
+                <div class="service-card-3d" style="padding: 32px 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px;">
+                    <div style="font-size: 2rem; color: #10b981; margin-bottom: 16px;"><i class="fa-solid fa-terminal"></i></div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">WP-CLI & Git Integration</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Power tools for developers – manage themes, plugins, and deployments directly from the command line.</p>
+                </div>
+
+                <div class="service-card-3d" style="padding: 32px 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px;">
+                    <div style="font-size: 2rem; color: #a855f7; margin-bottom: 16px;"><i class="fa-solid fa-shield-virus"></i></div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Automated Daily Malware Scans</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Automated daily malware scans help keep your site clean, secure, and protected against threats.</p>
+                </div>
+
+                <div class="service-card-3d" style="padding: 32px 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px;">
+                    <div style="font-size: 2rem; color: #f43f5e; margin-bottom: 16px;"><i class="fa-solid fa-copy"></i></div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Staging & Cloning</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Test changes or replicate your site easily with 1-click staging and cloning environments.</p>
+                </div>
+
+                <div class="service-card-3d" style="padding: 32px 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px;">
+                    <div style="font-size: 2rem; color: #38bdf8; margin-bottom: 16px;"><i class="fa-solid fa-globe"></i></div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Free Domain Registration</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Get started with a free domain included in your hosting plan – no extra cost for the first year.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+        <!-- FAQ Accordion Section (Matching Image Layout) -->
+    <section class="faq-section" style="padding: 80px 0;">
+        <div class="section-container">
+            <div style="display: grid; grid-template-columns: 1fr 1.6fr; gap: 50px; align-items: start;">
+                <!-- Left Column: Title & 3-line Description -->
+                <div>
+                    <span style="color: #f59e0b; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 12px;">FAQ</span>
+                    <h2 style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 700; color: #ffffff; line-height: 1.2; margin-bottom: 20px;">Frequently Asked Questions</h2>
+                    <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7;">Whether you're a beginner or a developer, we've got the answers to make your WordPress hosting smooth and stress-free.</p>
+                </div>
+
+                <!-- Right Column: Accordions -->
+                <div class="faq-accordion" style="width: 100%;">
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            <span>What makes WordPress hosting different from shared hosting?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>WordPress hosting is optimized specifically for WordPress sites, offering better speed, security, and features like automatic updates and staging environments that standard shared hosting may not include.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Is the environment really managed? What does that mean?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, it's fully managed – we handle server-level updates, performance tuning, backups, and security patches so you can focus solely on your website.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Do I need to install a CDN separately?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No, our WordPress hosting comes with an integrated LiteSpeed-powered CDN, already optimized for WordPress, improving global site performance.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What is WP-CLI and who is it for?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>WP-CLI is a command-line interface for developers to manage WordPress installations – perfect for advanced users who prefer faster control over plugins, themes, updates, and more.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Can I test changes before going live?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! Use our 1-click staging feature to test updates, plugins, or redesigns in a safe environment before pushing them live.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+        <div class="footer-top">
+            <div class="section-container footer-grid">
+                <div class="footer-brand">
+                    <div class="brand-logo" style="margin-bottom: 16px;">
+                        <img src="logo.png" alt="HiPapa Logo" class="brand-logo-img" style="background: #ffffff; padding: 4px 12px; border-radius: 8px;">
+                    </div>
+                    <p class="footer-desc">India’s own world-class hosting solution—secure, scalable, and lightning-fast, powered by Sanna Innovations.</p>
+                    <div class="social-links" style="margin-top: 20px;">
+                        <a href="https://www.facebook.com/profile.php?id=61577168709237" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/hipapa_official/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/hi-papa/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Solutions</h4>
+                    <ul>
+                        <li><a href="wordpress-hosting.html">&raquo; WordPress Hosting</a></li>
+                        <li><a href="shared-hosting.html">&raquo; Shared Hosting</a></li>
+                        <li><a href="vps-hosting.html">&raquo; VPS Hosting</a></li>
+                        <li><a href="dedicated-servers.html">&raquo; Dedicated Servers</a></li>
+                        <li><a href="domains.html">&raquo; Domains</a></li>
+                        <li><a href="email-solutions.html">&raquo; Email Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Location</h4>
+                    <div class="footer-map-wrapper" style="border-radius: 14px; overflow: hidden; border: 1px solid var(--border-glass);">
+                        <iframe loading="lazy" src="https://maps.google.com/maps?q=hipapa%20web%20hosting&t=m&z=10&output=embed&iwloc=near" title="HiPapa Web Hosting Map" style="width: 100%; height: 180px; border: 0;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="section-container bottom-flex" style="text-align: center;">
+                <p>&copy; 2025 Hi Papa Web Hosting & Digital Infrastructure Solutions | In association with <a style="color: #edc122;" href="https://www.hostpapa.in/" target="_blank" rel="noopener">HostPapa</a> | Powered by <a style="color: #edc122;" href="https://sannainnovations.com/" target="_blank" rel="noopener">Sanna Innovations</a>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
