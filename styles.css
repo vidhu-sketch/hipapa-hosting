@@ -363,7 +363,7 @@ body {
 }
 
 .nav-link:hover, .nav-link.active {
-    color: #f59e0b;
+    color: #00d2ff;
 }
 
 .nav-actions {
@@ -1470,7 +1470,7 @@ body {
 
 .compare-accordion-header .toggle-icon {
     font-size: 1.1rem;
-    color: #f59e0b;
+    color: #00d2ff;
     transition: transform 0.3s ease;
 }
 
