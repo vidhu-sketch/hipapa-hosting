@@ -300,15 +300,15 @@ function initEnquiryModal() {
             <div class="cart-modal-box">
 
                 <!-- Header -->
-                <div style="margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 14px; display: flex; align-items: center; justify-content: space-between; gap: 12px;">
-                    <h2 style="font-size: 1.8rem; font-weight: 800; color: #ffffff; margin: 0; display: flex; align-items: center; gap: 10px; flex-shrink: 0;">
+                <div class="cart-modal-header" style="margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 14px; display: flex; align-items: center; justify-content: space-between; gap: 10px;">
+                    <h2 style="font-size: 1.5rem; font-weight: 800; color: #ffffff; margin: 0; display: flex; align-items: center; gap: 8px;">
                         <i class="fa-solid fa-cart-shopping" style="color: #00d2ff;"></i> Your Cart
                     </h2>
-                    <div style="display: flex; align-items: center; gap: 10px; margin-left: auto;">
-                        <div style="background: rgba(0, 210, 255, 0.1); border: 1px solid rgba(0, 210, 255, 0.3); color: #00d2ff; padding: 6px 14px; border-radius: 50px; font-size: 0.8rem; font-weight: 700; white-space: nowrap; margin-right: 46px;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div class="cart-express-badge" style="background: rgba(0, 210, 255, 0.1); border: 1px solid rgba(0, 210, 255, 0.3); color: #00d2ff; padding: 4px 10px; border-radius: 50px; font-size: 0.75rem; font-weight: 700; white-space: nowrap;">
                             <i class="fa-solid fa-bolt"></i> Express Checkout
                         </div>
-                        <button type="button" class="modal-close" id="modal-close-btn" onclick="event.stopPropagation(); if(window.closeEnquiryModal) window.closeEnquiryModal();" aria-label="Close modal" style="background: rgba(255,255,255,0.1); color: #ffffff; border: 1px solid rgba(255,255,255,0.2); width: 36px; height: 36px; border-radius: 50%; cursor: pointer; font-size: 20px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; line-height: 1;">&times;</button>
+                        <button type="button" class="modal-close" id="modal-close-btn" onclick="event.stopPropagation(); if(window.closeEnquiryModal) window.closeEnquiryModal();" aria-label="Close modal" style="background: rgba(255,255,255,0.1); color: #ffffff; border: 1px solid rgba(255,255,255,0.2); width: 32px; height: 32px; border-radius: 50%; cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; line-height: 1;">&times;</button>
                     </div>
                 </div>
 
@@ -533,11 +533,11 @@ function initEnquiryModal() {
         const upiQrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent('upi://pay?pa=hipapa@razorpay&pn=HiPapa+Hosting&am=249&cu=INR&tn=HiPapa+Hosting+Plan')}`;
 
         const rzpHTML = `
-        <div id="rzp-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.75); backdrop-filter:blur(8px); z-index:99999999; align-items:center; justify-content:center; padding:16px; box-sizing:border-box;">
-            <div style="display:flex; max-width:860px; width:100%; border-radius:16px; overflow:hidden; box-shadow:0 30px 80px rgba(0,0,0,0.9); position:relative; max-height:92vh;">
+        <div id="rzp-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.75); backdrop-filter:blur(8px); z-index:99999999; align-items:center; justify-content:center; padding:12px; box-sizing:border-box;">
+            <div class="rzp-box-container" style="display:flex; max-width:860px; width:100%; border-radius:16px; overflow:hidden; box-shadow:0 30px 80px rgba(0,0,0,0.9); position:relative; max-height:92vh; background:#ffffff;">
 
                 <!-- LEFT PANEL: Blue Razorpay branding -->
-                <div style="width:280px; min-width:260px; background:linear-gradient(160deg, #1a3a6e 0%, #2a52a0 50%, #1a3a8a 100%); padding:28px 24px; display:flex; flex-direction:column; justify-content:space-between; position:relative; overflow:hidden;">
+                <div class="rzp-left-panel" style="width:280px; min-width:260px; background:linear-gradient(160deg, #1a3a6e 0%, #2a52a0 50%, #1a3a8a 100%); padding:24px 20px; display:flex; flex-direction:column; justify-content:space-between; position:relative; overflow:hidden;">
                     <!-- decorative circles -->
                     <div style="position:absolute; bottom:-40px; left:-40px; width:200px; height:200px; border-radius:50%; background:rgba(255,255,255,0.05);"></div>
                     <div style="position:absolute; bottom:-10px; right:-60px; width:160px; height:160px; border-radius:50%; background:rgba(255,255,255,0.05);"></div>
@@ -583,7 +583,7 @@ function initEnquiryModal() {
                 </div>
 
                 <!-- RIGHT PANEL: Payment Options -->
-                <div style="flex:1; background:#ffffff; display:flex; overflow:hidden; max-height:92vh;">
+                <div class="rzp-right-panel" style="flex:1; background:#ffffff; display:flex; overflow:hidden; max-height:92vh;">
                     
                     <!-- Payment method tabs -->
                     <div style="width:170px; background:#f5f6fa; border-right:1px solid #e5e7eb; padding:16px 0; flex-shrink:0;">
