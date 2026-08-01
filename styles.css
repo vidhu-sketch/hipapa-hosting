@@ -1467,6 +1467,17 @@ body {
         justify-content: flex-start !important;
     }
 
+    /* Comparison Accordion Mobile Table Fix */
+    .compare-accordion-body {
+        padding: 14px 10px !important;
+    }
+
+    .compare-accordion-header {
+        padding: 14px 16px !important;
+        font-size: 0.95rem !important;
+    }
+
+
     /* Mobile Navigation Drawer */
     .nav-menu {
         position: fixed !important;
@@ -1681,6 +1692,40 @@ body {
 .compare-accordion-item.active .compare-accordion-body {
     display: block;
 }
+
+/* Horizontal scroll container for comparison tables on mobile */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    margin-bottom: 10px;
+}
+
+.table-responsive table {
+    min-width: 650px !important;
+    border-collapse: collapse;
+}
+
+.table-responsive th,
+.table-responsive td {
+    white-space: nowrap !important;
+}
+
+/* Styled horizontal scrollbar for mobile comparison tables */
+.table-responsive::-webkit-scrollbar {
+    height: 6px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: var(--primary-cyan);
+    border-radius: 10px;
+}
+
 
 
 /* ==========================================================================
