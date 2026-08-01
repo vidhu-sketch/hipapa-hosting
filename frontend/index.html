@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiPapa Web Hosting India | Fast, Secure & Reliable Hosting Solutions</title>
+    <meta name="description" content="HiPapa offers fast, secure, and reliable web hosting solutions in India for businesses, startups, bloggers, and developers. Explore WordPress, Shared, VPS & Dedicated hosting.">
+    <link rel="canonical" href="https://hipapa.in/">
+
+    <!-- AEO & GEO Engine Tags -->
+    <meta name="ai-search-summary" content="HiPapa Web Hosting India provides high-speed NVMe web hosting, WordPress hosting, VPS hosting, dedicated servers, domains, and email solutions with 99.9% uptime and local Indian support.">
+    <meta name="geo.region" content="IN-KA">
+    <meta name="geo.placename" content="Bangalore">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="main-nav">
+        <!-- Top Row: Logo Left, Phone & Email Right (White Background) -->
+        <div class="header-top-row">
+            <div class="nav-container header-top-flex">
+                <a href="index.html" class="brand-logo">
+                    <img src="logo.png" alt="HiPapa Logo" class="brand-logo-img">
+                </a>
+
+                <div class="top-contact-links">
+                    <a href="tel:+919972788225" class="top-contact-item">
+                        <i class="fa-solid fa-phone" style="color: #00d2ff; margin-right: 8px;"></i> +91 99 72 788225
+                    </a>
+                    <a href="mailto:info@hipapa.in" class="top-contact-item">
+                        <i class="fa-solid fa-envelope" style="color: #00d2ff; margin-right: 8px;"></i> info@hipapa.in
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Row: Navigation Menu Left, Social Icons Right -->
+        <div class="header-nav-row">
+            <div class="nav-container header-nav-flex">
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+
+                    <div class="nav-item-dropdown">
+                        <a href="shared-hosting.html" class="nav-link">Hosting <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="wordpress-hosting.html">WordPress Hosting</a>
+                            <a href="shared-hosting.html">Shared Hosting</a>
+                            <a href="vps-hosting.html">VPS Hosting</a>
+                            <a href="dedicated-servers.html">Dedicated Servers</a>
+                        </div>
+                    </div>
+
+                    <a href="domains.html" class="nav-link">Domains</a>
+                    <a href="email-solutions.html" class="nav-link">Email Solutions</a>
+                    <a href="Corporate-Profile-Updated.pdf" class="nav-link" target="_blank">Our Builder's Portfolio</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </nav>
+
+                <div class="header-social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61577168709237" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/hipapa_official/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/hi-papa/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge-pill">
+                    <i class="fa-solid fa-bolt"></i> Fast & Secure Web Hosting India
+                </div>
+                <h1 class="hero-title">
+                    Powering Your Digital Presence with <span class="gradient-text">Next-Gen Speed</span> & 3D Cloud Care
+                </h1>
+                <p class="hero-description">
+                    HiPapa offers fast, secure, and reliable web hosting solutions in India for businesses, startups, bloggers, and developers. Our hosting services include shared hosting, WordPress hosting, VPS hosting, domain registration, email hosting, and SMS services designed to help your business grow online.
+                </p>
+
+                <div class="hero-cta-group">
+                    <a href="#hosting" class="btn btn-primary btn-glow">
+                        <span>Get Started Now</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 5 Value Proposition Pill Cards -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-top: 40px; text-align: left;">
+                    <div style="background: rgba(13, 20, 36, 0.7); border: 1px solid var(--border-glass); border-radius: 12px; padding: 14px 16px;">
+                        <h4 style="font-size: 0.95rem; font-weight: 700; color: #00d2ff; margin-bottom: 4px;"><i class="fa-solid fa-gauge-high"></i> SSD Turbo Hosting</h4>
+                        <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Experience lightning speed every time.</p>
+                    </div>
+
+                    <div style="background: rgba(13, 20, 36, 0.7); border: 1px solid var(--border-glass); border-radius: 12px; padding: 14px 16px;">
+                        <h4 style="font-size: 0.95rem; font-weight: 700; color: #38bdf8; margin-bottom: 4px;"><i class="fa-solid fa-shield-halved"></i> Free SSL & Daily Backups</h4>
+                        <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Your site stays secure, always.</p>
+                    </div>
+
+                    <div style="background: rgba(13, 20, 36, 0.7); border: 1px solid var(--border-glass); border-radius: 12px; padding: 14px 16px;">
+                        <h4 style="font-size: 0.95rem; font-weight: 700; color: #00d2ff; margin-bottom: 4px;"><i class="fa-solid fa-headset"></i> 9/7 Local Support</h4>
+                        <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Real people. Real help. In English, Hindi, Kannada & more.</p>
+                    </div>
+
+                    <div style="background: rgba(13, 20, 36, 0.7); border: 1px solid var(--border-glass); border-radius: 12px; padding: 14px 16px;">
+                        <h4 style="font-size: 0.95rem; font-weight: 700; color: #38bdf8; margin-bottom: 4px;"><i class="fa-solid fa-chart-line"></i> 99.9% Uptime Promise</h4>
+                        <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Your business never stops. Neither do we.</p>
+                    </div>
+
+                    <div style="background: rgba(13, 20, 36, 0.7); border: 1px solid var(--border-glass); border-radius: 12px; padding: 14px 16px;">
+                        <h4 style="font-size: 0.95rem; font-weight: 700; color: #38bdf8; margin-bottom: 4px;"><i class="fa-solid fa-credit-card"></i> Easy Indian Payments</h4>
+                        <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">UPI, Netbanking, Cards – all GST-invoiced.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="card-3d-wrapper" id="hero-3d-card">
+                    <div class="card-3d-inner">
+                        <div class="server-node-hologram">
+                            <img src="hipapa_3d_server.jpg" alt="HiPapa 3D Interactive Server Infrastructure" class="server-img-3d">
+                            <div class="pulse-ring ring-1"></div>
+                            <div class="pulse-ring ring-2"></div>
+                            <div class="floating-badge badge-top">
+                                <i class="fa-solid fa-shield-halved"></i> DDoS Protected
+                            </div>
+                            <div class="floating-badge badge-bottom">
+                                <i class="fa-solid fa-gauge-high"></i> LiteSpeed Engine
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Hi Papa Section -->
+    <section class="about-overview-section" style="padding: 80px 0; background: rgba(13, 20, 36, 0.4);">
+        <div class="section-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+            <div>
+                <span style="color: #00d2ff; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px;">About Hi Papa</span>
+                <h2 style="font-family: var(--font-heading); font-size: 2.3rem; font-weight: 700; color: #ffffff; line-height: 1.25; margin-bottom: 18px;">Fast & Secure Web Hosting India</h2>
+                <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 24px;">
+                    HiPapa offers fast, secure, and reliable web hosting solutions in India for businesses, startups, bloggers, and developers. Our hosting services include shared hosting, WordPress hosting, VPS hosting, domain registration, email hosting, and SMS services designed to help your business grow online.
+                </p>
+                <a href="about.html" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 10px;">
+                    <span>Explore More</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div style="text-align: center;">
+                <img src="home_about_dynamic.jpg" alt="Dynamic Web Hosting Concept" style="width: 100%; max-width: 480px; height: auto; border-radius: 20px; filter: drop-shadow(0 20px 30px rgba(0,210,255,0.2));">
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Hosting Solutions Section -->
+    <section class="services-section" id="hosting" style="padding: 80px 0;">
+        <div class="section-container">
+            <div class="section-header text-center" style="margin-bottom: 50px;">
+                <span style="color: #00d2ff; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Our Hosting Solutions</span>
+                <h2 style="font-family: var(--font-heading); font-size: 2.4rem; font-weight: 700; color: #ffffff; margin-bottom: 12px;">Powering Every Website, From Startup to Scale.</h2>
+                <p style="color: var(--text-muted); max-width: 780px; margin: 0 auto 20px auto; font-size: 1rem;">We provide a wide range of web hosting services in India including WordPress hosting, shared hosting, VPS hosting, dedicated servers, domain registration, email hosting, and SMS services for businesses of all sizes.</p>
+                <a href="shared-hosting.html" class="btn btn-outline" style="display: inline-flex; align-items: center; gap: 8px;">
+                    <span>Discover More</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+                        <div class="services-grid">
+                <!-- WordPress Hosting -->
+                <div class="service-card-3d" style="padding: 0; overflow: hidden; background: #ffffff; border-radius: 20px; border: 1px solid var(--border-glass);">
+                    <div style="width: 100%; height: 220px; overflow: hidden;">
+                        <img src="home_wordpress_card.png" alt="WordPress Hosting" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="padding: 28px 24px; text-align: center;">
+                        <h3 style="font-family: var(--font-heading); font-size: 1.4rem; font-weight: 700; color: #070913; margin-bottom: 12px;">WordPress Hosting</h3>
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 24px;">Optimized for WordPress with LiteSpeed, CDN, staging, free domain, and tools like WP-CLI, Git, and malware scans.</p>
+                        <a href="wordpress-hosting.html" class="btn" style="background: #046bd2; color: #ffffff; padding: 10px 28px; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block;">Learn more</a>
+                    </div>
+                </div>
+
+                <!-- Shared Hosting -->
+                <div class="service-card-3d" style="padding: 0; overflow: hidden; background: #ffffff; border-radius: 20px; border: 1px solid var(--border-glass);">
+                    <div style="width: 100%; height: 220px; overflow: hidden;">
+                        <img src="home_shared_card.png" alt="Shared Hosting" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="padding: 28px 24px; text-align: center;">
+                        <h3 style="font-family: var(--font-heading); font-size: 1.4rem; font-weight: 700; color: #070913; margin-bottom: 12px;">Shared Hosting</h3>
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 24px;">Fast, secure, and beginner-friendly hosting with SSD storage, free SSL, cPanel access, and 24/7 support.</p>
+                        <a href="shared-hosting.html" class="btn" style="background: #00d2ff; color: #ffffff; padding: 10px 28px; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block;">Learn more</a>
+                    </div>
+                </div>
+
+                <!-- VPS Hosting -->
+                <div class="service-card-3d" style="padding: 0; overflow: hidden; background: #ffffff; border-radius: 20px; border: 1px solid var(--border-glass);">
+                    <div style="width: 100%; height: 220px; overflow: hidden;">
+                        <img src="home_vps_card.png" alt="VPS Hosting" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="padding: 28px 24px; text-align: center;">
+                        <h3 style="font-family: var(--font-heading); font-size: 1.4rem; font-weight: 700; color: #070913; margin-bottom: 12px;">VPS Hosting</h3>
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 24px;">Powerful SSD-based VPS with root access, dedicated IP, scalable resources, and total control over your server environment.</p>
+                        <a href="vps-hosting.html" class="btn" style="background: #046bd2; color: #ffffff; padding: 10px 28px; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block;">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose HiPapa Hosting Section (Matching Original Site Exactly) -->
+    <section class="features-section" style="padding: 90px 0; background: rgba(7, 9, 19, 0.6);">
+        <div class="section-container">
+            <div class="section-header text-center" style="margin-bottom: 60px;">
+                <span style="color: #00d2ff; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Why Choose HiPapa Hosting</span>
+                <h2 style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 700; color: #ffffff;">Hosting That Understands India,<br>Built for the World.</h2>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: 40px; align-items: center;">
+                <!-- Left Column Features -->
+                <div style="display: flex; flex-direction: column; gap: 36px; text-align: right;">
+                    <div class="feature-item-exact">
+                        <div style="display: flex; align-items: center; justify-content: flex-end; gap: 14px; margin-bottom: 8px;">
+                            <h3 style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; color: #ffffff; margin: 0;">Fast SSD hosting servers</h3>
+                            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(0, 210, 255, 0.15); border: 1px solid rgba(0, 210, 255, 0.4); display: flex; align-items: center; justify-content: center; color: #00d2ff; font-size: 1.2rem; flex-shrink: 0;"><i class="fa-solid fa-bolt"></i></div>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Enjoy blazing-fast load times and improved reliability with high-performance SSD storage.</p>
+                    </div>
+
+                    <div class="feature-item-exact">
+                        <div style="display: flex; align-items: center; justify-content: flex-end; gap: 14px; margin-bottom: 8px;">
+                            <h3 style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; color: #ffffff; margin: 0;">Free SSL certificate</h3>
+                            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(0, 210, 255, 0.15); border: 1px solid rgba(0, 210, 255, 0.4); display: flex; align-items: center; justify-content: center; color: #00d2ff; font-size: 1.2rem; flex-shrink: 0;"><i class="fa-solid fa-lock"></i></div>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Secure your website and encrypt visitor data with free automated SSL certificates.</p>
+                    </div>
+
+                    <div class="feature-item-exact">
+                        <div style="display: flex; align-items: center; justify-content: flex-end; gap: 14px; margin-bottom: 8px;">
+                            <h3 style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; color: #ffffff; margin: 0;">Daily backups</h3>
+                            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(0, 210, 255, 0.15); border: 1px solid rgba(0, 210, 255, 0.4); display: flex; align-items: center; justify-content: center; color: #00d2ff; font-size: 1.2rem; flex-shrink: 0;"><i class="fa-solid fa-arrows-rotate"></i></div>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Protect your valuable data with automatic daily website backups and quick recovery.</p>
+                    </div>
+                </div>
+
+                <!-- Center Semi-Circle Datacenter Photo -->
+                <div style="text-align: center; position: relative;">
+                    <div style="width: 320px; height: 320px; margin: 0 auto; border-radius: 50%; overflow: hidden; border: 4px solid var(--primary-cyan); box-shadow: 0 0 40px rgba(0, 210, 255, 0.3);">
+                        <img src="datacenter_room.jpg" alt="Datacenter Server Room" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+
+                <!-- Right Column Features -->
+                <div style="display: flex; flex-direction: column; gap: 36px; text-align: left;">
+                    <div class="feature-item-exact">
+                        <div style="display: flex; align-items: center; justify-content: flex-start; gap: 14px; margin-bottom: 8px;">
+                            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(0, 210, 255, 0.15); border: 1px solid rgba(0, 210, 255, 0.4); display: flex; align-items: center; justify-content: center; color: #00d2ff; font-size: 1.2rem; flex-shrink: 0;"><i class="fa-solid fa-tag"></i></div>
+                            <h3 style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; color: #ffffff; margin: 0;">Affordable Hosting Plans</h3>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Get premium hosting features at prices designed to fit every budget.</p>
+                    </div>
+
+                    <div class="feature-item-exact">
+                        <div style="display: flex; align-items: center; justify-content: flex-start; gap: 14px; margin-bottom: 8px;">
+                            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(0, 210, 255, 0.15); border: 1px solid rgba(0, 210, 255, 0.4); display: flex; align-items: center; justify-content: center; color: #00d2ff; font-size: 1.2rem; flex-shrink: 0;"><i class="fa-solid fa-chart-line"></i></div>
+                            <h3 style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; color: #ffffff; margin: 0;">99.9% Uptime Guarantee</h3>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Keep your website live and accessible to customers 24/7 with minimal downtime.</p>
+                    </div>
+
+                    <div class="feature-item-exact">
+                        <div style="display: flex; align-items: center; justify-content: flex-start; gap: 14px; margin-bottom: 8px;">
+                            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.4); display: flex; align-items: center; justify-content: center; color: #38bdf8; font-size: 1.2rem; flex-shrink: 0;"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+                            <h3 style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; color: #ffffff; margin: 0;">Indian Support and Billing</h3>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Get local customer support and pay easily using UPI, Netbanking, or GST billing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section" style="padding: 80px 0; background: rgba(13, 20, 36, 0.4);">
+        <div class="section-container">
+            <div class="section-header text-center" style="margin-bottom: 50px;">
+                <span style="color: #00d2ff; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Testimonial</span>
+                <h2 style="font-family: var(--font-heading); font-size: 2.4rem; font-weight: 700; color: #ffffff; margin-bottom: 12px;">Reliable Hosting Solutions for Every Website</h2>
+                <p style="color: var(--text-muted); max-width: 780px; margin: 0 auto; font-size: 1rem;">Whether you are starting a blog, business website, eCommerce store, or enterprise application, HiPapa provides secure and scalable hosting solutions to support your online growth.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; max-width: 900px; margin: 0 auto;">
+                <div style="background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px; padding: 30px; position: relative;">
+                    <div style="color: #00d2ff; margin-bottom: 14px;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.6; font-style: italic; margin-bottom: 20px;">"Hi Papa gave us the performance and support the big brands couldn’t. Indian billing, real support—perfect!"</p>
+                    <span style="color: #ffffff; font-weight: 700; font-size: 0.95rem;">Manoj, Founder of VEnergizEV</span>
+                </div>
+
+                <div style="background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px; padding: 30px; position: relative;">
+                    <div style="color: #00d2ff; margin-bottom: 14px;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.6; font-style: italic; margin-bottom: 20px;">"Affordable, transparent, and built for India’s businesses. Our online store runs faster than ever."</p>
+                    <span style="color: #ffffff; font-weight: 700; font-size: 0.95rem;">Swati Deshmukh, Pune</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AEO & GEO Knowledge Hub FAQ Section (After Testimonials) -->
+    <section class="faq-section" style="padding: 80px 0; background: rgba(7, 9, 19, 0.7);">
+        <div class="section-container text-center">
+            <div class="badge-pill" style="margin-bottom: 16px; background: rgba(0, 210, 255, 0.1); border: 1px solid rgba(0, 210, 255, 0.3); color: #00d2ff;">AEO & GEO Knowledge Hub</div>
+            <h2 style="font-family: var(--font-heading); font-size: 2.6rem; font-weight: 700; color: #ffffff; margin-bottom: 40px;">Frequently Asked <span class="gradient-text">Questions</span></h2>
+
+            <div class="faq-accordion" style="max-width: 850px; margin: 0 auto; text-align: left;">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <span>Why should I choose HiPapa Web Hosting in India?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>HiPapa offers fast NVMe SSD storage, LiteSpeed acceleration, 99.9% uptime guarantee, free SSL certificates, automated daily backups, and local customer support with easy Indian payment options like UPI and Netbanking.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are free SSL certificates included with all hosting plans?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Every hosting plan at HiPapa comes with automated, free Let's Encrypt SSL certificates to keep your site secure and trusted by search engines.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How can I migrate my existing site to HiPapa?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our technical team provides free, seamless website migration assistance with zero downtime so you can transfer your site to HiPapa effortlessly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ready To Get Started CTA Banner Section (Matching User Screenshot Exactly) -->
+    <section class="cta-banner-section" style="padding: 80px 0;">
+        <div class="section-container">
+            <div style="background: linear-gradient(135deg, #046bd2 0%, #00d2ff 100%); border-radius: 24px; padding: 50px 60px; display: grid; grid-template-columns: 1.2fr 0.8fr; align-items: center; position: relative; overflow: hidden; box-shadow: 0 20px 40px rgba(4, 107, 210, 0.25);">
+                <div style="z-index: 2;">
+                    <h2 style="font-family: var(--font-heading); font-size: 2.8rem; font-weight: 800; color: #ffffff; margin-bottom: 16px; line-height: 1.2;">Ready To Get Started?</h2>
+                    <p style="color: rgba(255, 255, 255, 0.95); font-size: 1.05rem; line-height: 1.6; max-width: 520px; margin-bottom: 28px;">
+                        Launch your website with India’s most reliable hosting.<br>Get started with Hi Papa—secure, scalable, and lightning-fast.
+                    </p>
+                    <a href="javascript:void(0);" class="open-enquiry-modal btn" style="background: #046bd2; color: #ffffff; padding: 14px 32px; border-radius: 8px; font-weight: 700; font-size: 1rem; text-decoration: none; display: inline-block; box-shadow: 0 8px 20px rgba(4, 107, 210, 0.4); transition: transform 0.2s;">
+                        Get Started
+                    </a>
+                </div>
+
+                <div style="text-align: right; position: relative; z-index: 2;">
+                    <img src="get_started_cloud.png" alt="Ready To Get Started Cloud Server Illustration" style="width: 100%; max-width: 360px; height: auto; transform: scale(1.1); filter: drop-shadow(0 15px 25px rgba(0,0,0,0.25));">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+        <div class="footer-top">
+            <div class="section-container footer-grid">
+                <div class="footer-brand">
+                    <div class="brand-logo" style="margin-bottom: 16px;">
+                        <img src="logo.png" alt="HiPapa Logo" class="brand-logo-img" style="background: #ffffff; padding: 4px 12px; border-radius: 8px;">
+                    </div>
+                    <p class="footer-desc">India’s own world-class hosting solution—secure, scalable, and lightning-fast, powered by Sanna Innovations.</p>
+                    <div class="social-links" style="margin-top: 20px;">
+                        <a href="https://www.facebook.com/profile.php?id=61577168709237" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/hipapa_official/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/hi-papa/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Solutions</h4>
+                    <ul>
+                        <li><a href="wordpress-hosting.html">&raquo; WordPress Hosting</a></li>
+                        <li><a href="shared-hosting.html">&raquo; Shared Hosting</a></li>
+                        <li><a href="vps-hosting.html">&raquo; VPS Hosting</a></li>
+                        <li><a href="dedicated-servers.html">&raquo; Dedicated Servers</a></li>
+                        <li><a href="domains.html">&raquo; Domains</a></li>
+                        <li><a href="email-solutions.html">&raquo; Email Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Location</h4>
+                    <div class="footer-map-wrapper" style="border-radius: 14px; overflow: hidden; border: 1px solid var(--border-glass);">
+                        <iframe loading="lazy" src="https://maps.google.com/maps?q=hipapa%20web%20hosting&t=m&z=10&output=embed&iwloc=near" title="HiPapa Web Hosting Map" style="width: 100%; height: 180px; border: 0;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="section-container bottom-flex" style="text-align: center;">
+                <p>&copy; 2025 Hi Papa Web Hosting & Digital Infrastructure Solutions | In association with <a style="color: #38bdf8;" href="https://www.hostpapa.in/" target="_blank" rel="noopener">HostPapa</a> | Powered by <a style="color: #38bdf8;" href="https://sannainnovations.com/" target="_blank" rel="noopener">Sanna Innovations</a>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Solutions | Custom Business Email & Google Workspace India | HiPapa</title>
+    <meta name="description" content="Secure, scalable custom domain email hosting, Advanced Mail, and Google Workspace solutions for individuals, growing teams, and enterprises in India.">
+    <link rel="canonical" href="https://hipapa.in/solutions/email-solutions/">
+
+    <!-- AEO & GEO Engine Tags -->
+    <meta name="ai-search-summary" content="HiPapa offers professional custom domain email solutions, Advanced Mail, and Google Workspace integration in India with spam protection, webmail, mobile sync, and 24/7 support.">
+    <meta name="geo.region" content="IN-KA">
+    <meta name="geo.placename" content="Bangalore">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="main-nav">
+        <!-- Top Row: Logo Left, Phone & Email Right (White Background) -->
+        <div class="header-top-row">
+            <div class="nav-container header-top-flex">
+                <a href="index.html" class="brand-logo">
+                    <img src="logo.png" alt="HiPapa Logo" class="brand-logo-img">
+                </a>
+
+                <div class="top-contact-links">
+                    <a href="tel:+919972788225" class="top-contact-item">
+                        <i class="fa-solid fa-phone" style="color: #00d2ff; margin-right: 8px;"></i> +91 99 72 788225
+                    </a>
+                    <a href="mailto:info@hipapa.in" class="top-contact-item">
+                        <i class="fa-solid fa-envelope" style="color: #00d2ff; margin-right: 8px;"></i> info@hipapa.in
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Row: Navigation Menu Left, Social Icons Right -->
+        <div class="header-nav-row">
+            <div class="nav-container header-nav-flex">
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+
+                    <div class="nav-item-dropdown">
+                        <a href="shared-hosting.html" class="nav-link">Hosting <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="wordpress-hosting.html">WordPress Hosting</a>
+                            <a href="shared-hosting.html">Shared Hosting</a>
+                            <a href="vps-hosting.html">VPS Hosting</a>
+                            <a href="dedicated-servers.html">Dedicated Servers</a>
+                        </div>
+                    </div>
+
+                    <a href="domains.html" class="nav-link">Domains</a>
+                    <a href="email-solutions.html" class="nav-link active">Email Solutions</a>
+                    <a href="Corporate-Profile-Updated.pdf" class="nav-link" target="_blank">Our Builder's Portfolio</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </nav>
+
+                <div class="header-social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61577168709237" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/hipapa_official/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/hi-papa/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header Banner with Dark Tech Circuit Background -->
+    <section class="page-banner-section" style="background: linear-gradient(rgba(7, 9, 19, 0.75), rgba(7, 9, 19, 0.85)), url('about_banner.jpg') center/cover no-repeat; padding-top: 140px;">
+        <div class="section-container" style="text-align: center; padding: 60px 0;">
+            <h1 style="font-family: var(--font-heading); font-size: 3rem; font-weight: 700; color: #ffffff;">Email Solutions</h1>
+        </div>
+    </section>
+
+    <!-- Overview 1: Basic Mail -->
+    <section class="overview-explanation-section" style="padding: 80px 0; background: rgba(13, 20, 36, 0.4);">
+        <div class="section-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+            <div class="overview-text">
+                <span style="color: #00d2ff; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Basic Mail</span>
+                <h2 style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 700; color: #ffffff; line-height: 1.25; margin-bottom: 20px;">Professional Identity Made Simple</h2>
+                <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 16px;">The Basic Mail plan is designed for individuals, freelancers, and small businesses who want to establish a professional identity with a custom domain email. It offers a dependable and affordable way to communicate with clients while enhancing your brand’s credibility.</p>
+                <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7;">Accessible from any device, Basic Mail ensures you’re always connected – whether you’re working from your desk, on the go, or checking in between meetings. It’s the perfect solution for those who need reliable email without complexity.</p>
+            </div>
+            <div class="overview-image" style="text-align: center;">
+                <img src="email_basic-email.png" alt="Basic Mail Illustration" style="width: 100%; max-width: 480px; height: auto; border-radius: 20px; filter: drop-shadow(0 20px 30px rgba(0,210,255,0.2));">
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview 2: Advanced Mail -->
+    <section class="overview-explanation-section" style="padding: 80px 0; background: rgba(7, 9, 19, 0.6);">
+        <div class="section-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+            <div class="overview-image" style="text-align: center;">
+                <img src="email_advanced-email.png" alt="Advanced Mail Illustration" style="width: 100%; max-width: 480px; height: auto; border-radius: 20px; filter: drop-shadow(0 20px 30px rgba(4,107,210,0.3));">
+            </div>
+            <div class="overview-text">
+                <span style="color: #00d2ff; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Advanced Mail</span>
+                <h2 style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 700; color: #ffffff; line-height: 1.25; margin-bottom: 20px;">Scalable Communication for Growing Teams</h2>
+                <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 16px;">As your business expands, your communication needs become more dynamic. The Advanced Mail plan is tailored for growing teams and small to mid-sized businesses that require a structured, professional email system across departments and roles. It supports branded email addresses for different teams, helping you stay organized and maintain consistency in every client interaction.</p>
+                <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7;">Designed to keep your team connected – whether working remotely or in the office – Advanced Mail offers a dependable, streamlined experience across all your devices. It brings together performance, ease of use, and the professional image your business deserves, making it a smart step forward for organizations ready to scale with confidence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview 3: Google Workspace -->
+    <section class="overview-explanation-section" style="padding: 80px 0; background: rgba(13, 20, 36, 0.4);">
+        <div class="section-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+            <div class="overview-text">
+                <span style="color: #00d2ff; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Google Workspace</span>
+                <h2 style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 700; color: #ffffff; line-height: 1.25; margin-bottom: 20px;">Enterprise Collaboration with Familiar Tools</h2>
+                <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 16px;">Google Workspace is the perfect solution for businesses that rely on seamless collaboration and cloud-based productivity. With your email powered by Gmail and branded with your domain, you present a professional image while enjoying the reliability and familiarity of Google’s platform.</p>
+                <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7;">Beyond email, your team gets access to tools like Google Drive, Docs, Sheets, Meet, and Calendar – all designed to help you work smarter, communicate efficiently, and stay connected from anywhere. Whether you’re in the office or working remotely, Google Workspace offers a modern, integrated experience to keep your business running smoothly.</p>
+            </div>
+            <div class="overview-image" style="text-align: center;">
+                <img src="email_workspace.png" alt="Google Workspace Illustration" style="width: 100%; max-width: 480px; height: auto; border-radius: 20px; filter: drop-shadow(0 20px 30px rgba(0, 210, 255, 0.15));">
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section class="services-section" style="padding: 80px 0;">
+        <div class="section-container">
+            <div class="section-header text-center" style="margin-bottom: 50px;">
+                <span style="color: #00d2ff; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Plans That Fit Every Dream</span>
+                <h2 style="font-family: var(--font-heading); font-size: 2.4rem; font-weight: 700; color: #ffffff;">Check Out Awesome Plans, And Order Now</h2>
+            </div>
+
+                        <div class="services-grid">
+                <!-- Basic Mail -->
+                <div class="service-card-3d" data-tilt>
+                    <span style="color: #38bdf8; font-weight: 700; font-size: 0.85rem; text-transform: uppercase;">Freelancers & Individuals</span>
+                    <h3 class="service-title" style="margin-top: 4px;">Basic Mail <span style="display: inline-block; margin-left: 8px; background: rgba(0, 210, 255, 0.15); color: #00d2ff; font-size: 0.9rem; font-weight: 700; padding: 2px 10px; border-radius: 20px; border: 1px solid rgba(0, 210, 255, 0.3);">₹29/mo</span></h3>
+                    
+                    <h4 style="color: #00d2ff; font-size: 0.95rem; font-weight: 700; margin: 16px 0 10px 0;">Top Features</h4>
+                    <ul class="service-features" style="text-align: left;">
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Custom domain email</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> 5 GB storage</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Webmail access</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Access on all devices (Gmail, Outlook, Apple Mail, mobile apps)</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Standard spam & virus protection</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Basic calendar and contact sync</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Suitable for remote work (basic needs)</li>
+                    </ul>
+
+                    <h4 style="color: #00d2ff; font-size: 0.95rem; font-weight: 700; margin: 20px 0 10px 0;">Additional Features</h4>
+                    <ul class="service-features" style="text-align: left;">
+                        <li style="opacity: 0.7;"><i class="fa-solid fa-circle-xmark" style="color: #64748b;"></i> Branded team emails (sales@, hr@, etc.)</li>
+                        <li style="opacity: 0.7;"><i class="fa-solid fa-circle-xmark" style="color: #64748b;"></i> Productivity tools (Docs, Sheets, Meet, etc.)</li>
+                        <li style="opacity: 0.7;"><i class="fa-solid fa-circle-xmark" style="color: #64748b;"></i> Real-time collaboration</li>
+                        <li style="opacity: 0.7;"><i class="fa-solid fa-circle-xmark" style="color: #64748b;"></i> Admin control panel</li>
+                        <li style="opacity: 0.7;"><i class="fa-solid fa-circle-xmark" style="color: #64748b;"></i> Migration assistance</li>
+                        <li style="opacity: 0.7;"><i class="fa-solid fa-circle-xmark" style="color: #64748b;"></i> Scalable for teams</li>
+                        <li style="opacity: 0.7;"><i class="fa-solid fa-circle-xmark" style="color: #64748b;"></i> Priority support</li>
+                    </ul>
+
+                    <div class="card-footer-action" style="margin-top: 24px;">
+                        <a href="javascript:void(0);" class="open-enquiry-modal btn btn-outline">Buy Plan</a>
+                    </div>
+                </div>
+
+                <!-- Advanced Mail -->
+                <div class="service-card-3d featured" data-tilt>
+                    <div class="featured-badge">MOST POPULAR</div>
+                    <div class="card-glow-layer"></div>
+                    <span style="color: #38bdf8; font-weight: 700; font-size: 0.85rem; text-transform: uppercase;">Growing Teams</span>
+                    <h3 class="service-title" style="margin-top: 4px;">Advanced Mail <span style="display: inline-block; margin-left: 8px; background: rgba(0, 210, 255, 0.15); color: #00d2ff; font-size: 0.9rem; font-weight: 700; padding: 2px 10px; border-radius: 20px; border: 1px solid rgba(0, 210, 255, 0.3);">₹59/mo</span></h3>
+                    
+                    <h4 style="color: #00d2ff; font-size: 0.95rem; font-weight: 700; margin: 16px 0 10px 0;">Top Features</h4>
+                    <ul class="service-features" style="text-align: left;">
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Custom domain email</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> 15 GB storage</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Webmail + full cross-device compatibility</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Branded email addresses for multiple departments</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Enhanced spam & security protection</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Calendar & contact sync</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Suitable for hybrid or remote teams</li>
+                    </ul>
+
+                    <h4 style="color: #00d2ff; font-size: 0.95rem; font-weight: 700; margin: 20px 0 10px 0;">Additional Features</h4>
+                    <ul class="service-features" style="text-align: left;">
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Admin panel for user control</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Migration support via HiPapa</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Scalable for growing businesses</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Priority support</li>
+                        <li style="opacity: 0.7;"><i class="fa-solid fa-circle-xmark" style="color: #64748b;"></i> Productivity tools (Docs, Sheets, etc.)</li>
+                        <li style="opacity: 0.7;"><i class="fa-solid fa-circle-xmark" style="color: #64748b;"></i> Real-time collaboration</li>
+                    </ul>
+
+                    <div class="card-footer-action" style="margin-top: 24px;">
+                        <a href="javascript:void(0);" class="open-enquiry-modal btn btn-primary">Buy Plan</a>
+                    </div>
+                </div>
+
+                <!-- Google Workspace -->
+                <div class="service-card-3d" data-tilt>
+                    <span style="color: #38bdf8; font-weight: 700; font-size: 0.85rem; text-transform: uppercase;">Agencies & Enterprises</span>
+                    <h3 class="service-title" style="margin-top: 4px;">Google Workspace <span style="display: inline-block; margin-left: 8px; background: rgba(0, 210, 255, 0.15); color: #00d2ff; font-size: 0.9rem; font-weight: 700; padding: 2px 10px; border-radius: 20px; border: 1px solid rgba(0, 210, 255, 0.3);">₹130/mo</span></h3>
+                    
+                    <h4 style="color: #00d2ff; font-size: 0.95rem; font-weight: 700; margin: 16px 0 10px 0;">Top Features</h4>
+                    <ul class="service-features" style="text-align: left;">
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Gmail with your domain</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> 30 GB Google Drive storage</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Seamless access across all platforms and devices</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Google tools: Docs, Sheets, Slides, Meet, Calendar</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Real-time collaboration</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Full calendar, contacts, and email integration</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Ideal for remote and global teams</li>
+                    </ul>
+
+                    <h4 style="color: #00d2ff; font-size: 0.95rem; font-weight: 700; margin: 20px 0 10px 0;">Additional Features</h4>
+                    <ul class="service-features" style="text-align: left;">
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Admin console for full user and app management</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Enterprise-grade security by Google</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Full migration support and setup via HiPapa</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Certified Google Workspace support</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #00d2ff;"></i> Scalable for businesses of all sizes</li>
+                    </ul>
+
+                    <div class="card-footer-action" style="margin-top: 24px;">
+                        <a href="javascript:void(0);" class="open-enquiry-modal btn btn-outline">Buy Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Included With Every Email Hosting Plan Section -->
+    <section class="included-features-section" style="padding: 80px 0; background: rgba(13, 20, 36, 0.5);">
+        <div class="section-container">
+            <div class="section-header text-center" style="margin-bottom: 50px;">
+                <span style="color: #00d2ff; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Included With Every Hosting Plan</span>
+                <h2 style="font-family: var(--font-heading); font-size: 2.4rem; font-weight: 700; color: #ffffff;">Build, Launch, Grow with Confidence</h2>
+            </div>
+
+            <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+                <!-- Card 1 -->
+                <div class="service-card-3d" style="padding: 32px 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px;">
+                    <div style="font-size: 2rem; color: #38bdf8; margin-bottom: 16px;"><i class="fa-solid fa-rotate"></i></div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Stay Synced Across Devices</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Keep your inbox updated in real-time across all your devices – phones, tablets, and desktops. Never miss an important message.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card-3d" style="padding: 32px 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px;">
+                    <div style="font-size: 2rem; color: #00d2ff; margin-bottom: 16px;"><i class="fa-solid fa-paper-plane"></i></div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Flexible Sending Limits</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Avoid restrictions and delays. HiPapa Email Hosting offers generous outbound sending limits that let you communicate freely.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card-3d" style="padding: 32px 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px;">
+                    <div style="font-size: 2rem; color: #00d2ff; margin-bottom: 16px;"><i class="fa-solid fa-paperclip"></i></div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Attach Large Files</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Send email attachments up to 25MB directly – no third-party tools needed. Ideal for sharing presentations and brochures.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="service-card-3d" style="padding: 32px 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px;">
+                    <div style="font-size: 2rem; color: #38bdf8; margin-bottom: 16px;"><i class="fa-solid fa-hard-drive"></i></div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Ample Storage Space</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Start with generous storage and scale as you grow. HiPapa ensures you never have to delete old conversations to make space.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="service-card-3d" style="padding: 32px 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px;">
+                    <div style="font-size: 2rem; color: #38bdf8; margin-bottom: 16px;"><i class="fa-solid fa-shield-virus"></i></div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Secure & Reliable</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Benefit from strong anti-spam, anti-phishing, and virus protection. Every email is scanned to ensure your communications stay safe.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="service-card-3d" style="padding: 32px 28px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px;">
+                    <div style="font-size: 2rem; color: #38bdf8; margin-bottom: 16px;"><i class="fa-solid fa-network-wired"></i></div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Unlimited IMAP Access</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Access your mailbox from multiple devices with unlimited IMAP connections. Mobile, laptop, or desktop – always connected.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+        <!-- FAQ Accordion Section -->
+    <section class="faq-section" style="padding: 80px 0;">
+        <div class="section-container">
+            <div style="display: grid; grid-template-columns: 1fr 1.6fr; gap: 50px; align-items: start;">
+                <div>
+                    <span style="color: #00d2ff; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 12px;">FAQ</span>
+                    <h2 style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 700; color: #ffffff; line-height: 1.2; margin-bottom: 20px;">Frequently Asked Questions</h2>
+                    <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7;">Have questions about domain email setup or Google Workspace migration? We've got you covered.</p>
+                </div>
+                <div class="faq-accordion" style="width: 100%;">
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            <span>Do I need technical knowledge to manage these email accounts?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Not at all. Our team handles the setup and configuration for you, and you’ll get access to easy guides and support if you want to add accounts or make changes later.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Can I use my custom domain with your email plans?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, all our email plans allow you to use your own domain (e.g., yourname@yourdomain.com) to create a professional email identity.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Will I be able to access my emails on mobile devices?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely. You can easily configure your emails on iOS, Android, Outlook, Gmail app, and Apple Mail with full IMAP/POP3 sync.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How secure is my email account with your hosting?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We enforce enterprise-grade anti-spam filtering, anti-phishing, SSL/TLS encryption, and virus scanning on all inbound and outbound emails.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Can I upgrade my plan later if my team grows?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, you can upgrade your plan or add additional mailboxes seamlessly at any time without any downtime or email disruption.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+        <div class="footer-top">
+            <div class="section-container footer-grid">
+                <div class="footer-brand">
+                    <div class="brand-logo" style="margin-bottom: 16px;">
+                        <img src="logo.png" alt="HiPapa Logo" class="brand-logo-img" style="background: #ffffff; padding: 4px 12px; border-radius: 8px;">
+                    </div>
+                    <p class="footer-desc">India’s own world-class hosting solution—secure, scalable, and lightning-fast, powered by Sanna Innovations.</p>
+                    <div class="social-links" style="margin-top: 20px;">
+                        <a href="https://www.facebook.com/profile.php?id=61577168709237" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/hipapa_official/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/hi-papa/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Solutions</h4>
+                    <ul>
+                        <li><a href="wordpress-hosting.html">&raquo; WordPress Hosting</a></li>
+                        <li><a href="shared-hosting.html">&raquo; Shared Hosting</a></li>
+                        <li><a href="vps-hosting.html">&raquo; VPS Hosting</a></li>
+                        <li><a href="dedicated-servers.html">&raquo; Dedicated Servers</a></li>
+                        <li><a href="domains.html">&raquo; Domains</a></li>
+                        <li><a href="email-solutions.html">&raquo; Email Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Location</h4>
+                    <div class="footer-map-wrapper" style="border-radius: 14px; overflow: hidden; border: 1px solid var(--border-glass);">
+                        <iframe loading="lazy" src="https://maps.google.com/maps?q=hipapa%20web%20hosting&t=m&z=10&output=embed&iwloc=near" title="HiPapa Web Hosting Map" style="width: 100%; height: 180px; border: 0;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="section-container bottom-flex" style="text-align: center;">
+                <p>&copy; 2025 Hi Papa Web Hosting & Digital Infrastructure Solutions | In association with <a style="color: #38bdf8;" href="https://www.hostpapa.in/" target="_blank" rel="noopener">HostPapa</a> | Powered by <a style="color: #38bdf8;" href="https://sannainnovations.com/" target="_blank" rel="noopener">Sanna Innovations</a>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

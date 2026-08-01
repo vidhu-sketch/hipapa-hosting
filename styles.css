@@ -1489,3 +1489,65 @@ body {
     display: block;
 }
 
+
+/* ==========================================================================
+   Hostinger-Style Checkout Modal (Strict Fixed Overlay)
+   ========================================================================== */
+#enquiry-modal.modal-overlay {
+    display: none;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: rgba(4, 8, 18, 0.85) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    z-index: 9999999 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 20px !important;
+}
+
+#enquiry-modal.modal-overlay.active {
+    display: flex !important;
+}
+
+.cart-modal-box {
+    background: #070913 !important;
+    color: #ffffff !important;
+    width: 100% !important;
+    max-width: 920px !important;
+    max-height: 90vh !important;
+    border: 1px solid rgba(0, 210, 255, 0.35) !important;
+    border-radius: 24px !important;
+    padding: 28px 32px !important;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9) !important;
+    position: relative !important;
+    overflow-y: auto !important;
+}
+
+.cart-layout-grid {
+    display: grid !important;
+    grid-template-columns: 1.15fr 0.85fr !important;
+    gap: 24px !important;
+    width: 100% !important;
+    align-items: start !important;
+}
+
+@media (max-width: 820px) {
+    .cart-layout-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    .cart-modal-box {
+        padding: 20px 16px !important;
+    }
+}
+
+select option {
+    background-color: #0d1424 !important;
+    color: #ffffff !important;
+}

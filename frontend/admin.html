@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiPapa Admin - Enquiry Database Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #070913;
+            color: #ffffff;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            padding-bottom: 60px;
+        }
+
+        .admin-header {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-glass);
+            padding: 20px 0;
+            margin-bottom: 40px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .admin-nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .admin-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .admin-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: var(--shadow-card);
+        }
+
+        .stat-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 14px;
+            background: rgba(4, 107, 210, 0.15);
+            color: var(--primary-cyan);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--text-white);
+        }
+
+        .stat-label {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+        }
+
+        .controls-bar {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            padding: 18px 24px;
+            margin-bottom: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .search-box {
+            position: relative;
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 12px 16px 12px 42px;
+            background: rgba(7, 9, 19, 0.6);
+            border: 1px solid var(--border-glass);
+            border-radius: 10px;
+            color: #fff;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        .search-box i {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+        }
+
+        .table-wrapper {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            overflow-x: auto;
+            box-shadow: var(--shadow-card);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.92rem;
+        }
+
+        th {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 16px 20px;
+            color: var(--primary-cyan);
+            font-weight: 700;
+            border-bottom: 1px solid var(--border-glass);
+            white-space: nowrap;
+        }
+
+        td {
+            padding: 16px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .badge-service {
+            display: inline-block;
+            background: rgba(0, 210, 255, 0.12);
+            color: var(--primary-cyan);
+            border: 1px solid rgba(0, 210, 255, 0.3);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .btn-delete {
+            background: rgba(239, 68, 68, 0.15);
+            color: #ef4444;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 6px;
+            padding: 6px 12px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .btn-delete:hover {
+            background: #ef4444;
+            color: #ffffff;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-muted);
+        }
+
+        .empty-state i {
+            font-size: 3rem;
+            margin-bottom: 16px;
+            color: var(--primary-cyan);
+        }
+    </style>
+</head>
+<body>
+
+        <!-- Navigation Header -->
+        <!-- Navigation Header -->
+    <header class="navbar" id="main-nav">
+        <!-- Top Row: Logo Left, Phone & Email Right (White Background) -->
+        <div class="header-top-row">
+            <div class="nav-container header-top-flex">
+                <a href="index.html" class="brand-logo">
+                    <img src="logo.png" alt="HiPapa Logo" class="brand-logo-img">
+                </a>
+
+                <div class="top-contact-links">
+                    <a href="tel:+919972788225" class="top-contact-item">
+                        <i class="fa-solid fa-phone" style="color: #f59e0b; margin-right: 8px;"></i> +91 99 72 788225
+                    </a>
+                    <a href="mailto:info@hipapa.in" class="top-contact-item">
+                        <i class="fa-solid fa-envelope" style="color: #f59e0b; margin-right: 8px;"></i> info@hipapa.in
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Row: Navigation Menu Left, Social Icons Right (Blue Theme Bar) -->
+        <div class="header-nav-row">
+            <div class="nav-container header-nav-flex">
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link ">Home</a>
+                    <a href="about.html" class="nav-link ">About Us</a>
+
+                    <div class="nav-item-dropdown">
+                        <a href="shared-hosting.html" class="nav-link ">Hosting <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="wordpress-hosting.html">WordPress Hosting</a>
+                            <a href="shared-hosting.html">Shared Hosting</a>
+                            <a href="vps-hosting.html">VPS Hosting</a>
+                            <a href="dedicated-servers.html">Dedicated Servers</a>
+                        </div>
+                    </div>
+
+                    <a href="domains.html" class="nav-link ">Domains</a>
+                    <a href="email-solutions.html" class="nav-link ">Email Solutions</a>
+                    <a href="Corporate-Profile-Updated.pdf" class="nav-link" target="_blank">Our Builder's Portfolio</a>
+                    <a href="contact.html" class="nav-link ">Contact Us</a>
+                </nav>
+
+                <div class="header-social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61577168709237" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/hipapa_official/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/hi-papa/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="admin-container">
+
+        <!-- Stats Overview -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-inbox"></i></div>
+                <div>
+                    <div class="stat-number" id="stat-total">0</div>
+                    <div class="stat-label">Total Database Enquiries</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-clock"></i></div>
+                <div>
+                    <div class="stat-number" id="stat-latest" style="font-size: 1.1rem; line-height: 1.4;">--</div>
+                    <div class="stat-label">Latest Submission</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="controls-bar">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search-input" placeholder="Search by name, email, phone, or service...">
+            </div>
+            <button type="button" id="refresh-btn" class="btn btn-glass" style="padding: 10px 20px;">
+                <i class="fa-solid fa-rotate"></i> Refresh Data
+            </button>
+        </div>
+
+        <!-- Data Table -->
+        <div class="table-wrapper">
+            <table id="enquiries-table">
+                <thead>
+                    <tr>
+                        <th>#ID</th>
+                        <th>Date & Time</th>
+                        <th>Customer Name</th>
+                        <th>Email & Phone</th>
+                        <th>Service Requested</th>
+                        <th>Domain</th>
+                        <th>Contact Method</th>
+                        <th>Message</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <tr>
+                        <td colspan="9">
+                            <div class="empty-state">
+                                <i class="fa-solid fa-spinner fa-spin"></i>
+                                <h3>Loading Database Records...</h3>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <script>
+        let allEnquiries = [];
+
+        async function fetchEnquiries() {
+            const tableBody = document.getElementById('table-body');
+            try {
+                const res = await fetch('/api/enquiries');
+                allEnquiries = await res.json();
+                renderTable(allEnquiries);
+                updateStats(allEnquiries);
+            } catch (err) {
+                console.error(err);
+                tableBody.innerHTML = `
+                    <tr>
+                        <td colspan="9">
+                            <div class="empty-state">
+                                <i class="fa-solid fa-triangle-exclamation" style="color: #ef4444;"></i>
+                                <h3>Database Connection Error</h3>
+                                <p>Make sure server.py is running on localhost:8000.</p>
+                            </div>
+                        </td>
+                    </tr>`;
+            }
+        }
+
+        function updateStats(data) {
+            document.getElementById('stat-total').innerText = data.length;
+            if (data.length > 0) {
+                document.getElementById('stat-latest').innerText = data[0].created_at;
+            } else {
+                document.getElementById('stat-latest').innerText = 'No submissions yet';
+            }
+        }
+
+        function renderTable(data) {
+            const tableBody = document.getElementById('table-body');
+            if (data.length === 0) {
+                tableBody.innerHTML = `
+                    <tr>
+                        <td colspan="9">
+                            <div class="empty-state">
+                                <i class="fa-solid fa-folder-open"></i>
+                                <h3>No Enquiries Found</h3>
+                                <p>Submitted customer enquiries will appear here automatically.</p>
+                            </div>
+                        </td>
+                    </tr>`;
+                return;
+            }
+
+            tableBody.innerHTML = data.map(item => `
+                <tr>
+                    <td><strong>#${item.id}</strong></td>
+                    <td style="white-space: nowrap; color: var(--text-muted); font-size: 0.85rem;">${item.created_at || '--'}</td>
+                    <td><strong>${escapeHtml(item.name)}</strong></td>
+                    <td>
+                        <div><a href="mailto:${escapeHtml(item.email)}" style="color: var(--primary-cyan); text-decoration: none;">${escapeHtml(item.email)}</a></div>
+                        <div style="color: var(--text-muted); font-size: 0.85rem;">${escapeHtml(item.phone)}</div>
+                    </td>
+                    <td><span class="badge-service">${escapeHtml(item.service || 'General')}</span></td>
+                    <td>${item.domain ? escapeHtml(item.domain) : '<span style="color:var(--text-muted)">N/A</span>'}</td>
+                    <td>${item.contact_method ? escapeHtml(item.contact_method) : 'Email'}</td>
+                    <td style="max-width: 250px;">${item.message ? escapeHtml(item.message) : '<em style="color:var(--text-muted)">No message provided</em>'}</td>
+                    <td>
+                        <button type="button" class="btn-delete" onclick="deleteEnquiry(${item.id})">
+                            <i class="fa-solid fa-trash"></i> Delete
+                        </button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        async function deleteEnquiry(id) {
+            if (!confirm(`Are you sure you want to delete enquiry #${id}?`)) return;
+            try {
+                await fetch(`/api/enquiry?id=${id}`, { method: 'DELETE' });
+                fetchEnquiries();
+            } catch (err) {
+                alert('Error deleting record: ' + err);
+            }
+        }
+
+        function escapeHtml(str) {
+            if (!str) return '';
+            return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+        }
+
+        // Search Filter
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            const filtered = allEnquiries.filter(item => 
+                (item.name && item.name.toLowerCase().includes(query)) ||
+                (item.email && item.email.toLowerCase().includes(query)) ||
+                (item.phone && item.phone.toLowerCase().includes(query)) ||
+                (item.service && item.service.toLowerCase().includes(query)) ||
+                (item.domain && item.domain.toLowerCase().includes(query))
+            );
+            renderTable(filtered);
+        });
+
+        document.getElementById('refresh-btn').addEventListener('click', fetchEnquiries);
+
+        // Auto load on start
+        fetchEnquiries();
+    </script>
+</body>
+</html>
