@@ -1428,6 +1428,199 @@ body {
     }
 }
 
+/* ==========================================================================
+   Comprehensive Mobile & Tablet Responsiveness Enhancements (<768px & <480px)
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* Container padding */
+    .section-container,
+    .navbar-container,
+    .hero-container {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    /* Force all grid columns to 1fr on mobile */
+    .hero-container,
+    .section-container,
+    .services-grid,
+    .features-grid,
+    .footer-grid,
+    .addons-wrapper,
+    [style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+    }
+
+    /* Inline flex alignment overrides for features column */
+    div[style*="grid-template-columns: 1fr 1.2fr 1fr"] {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+
+    div[style*="text-align: right"] {
+        text-align: left !important;
+    }
+
+    div[style*="justify-content: flex-end"] {
+        justify-content: flex-start !important;
+    }
+
+    /* Mobile Navigation Drawer */
+    .nav-menu {
+        position: fixed !important;
+        top: 70px !important;
+        left: 0 !important;
+        width: 100vw !important;
+        height: calc(100vh - 70px) !important;
+        background: #070913 !important;
+        flex-direction: column !important;
+        padding: 24px 20px !important;
+        overflow-y: auto !important;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.9) !important;
+        border-top: 1px solid var(--border-glass) !important;
+    }
+
+    .nav-menu.active {
+        display: flex !important;
+    }
+
+    .nav-link {
+        font-size: 1.1rem !important;
+        width: 100% !important;
+        padding: 12px 0 !important;
+        border-bottom: 1px solid rgba(255,255,255,0.05) !important;
+    }
+
+    .dropdown-menu {
+        position: static !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+        box-shadow: none !important;
+        border: none !important;
+        background: rgba(255,255,255,0.03) !important;
+        border-radius: 12px !important;
+        margin-top: 8px !important;
+        padding: 10px 14px !important;
+    }
+
+    /* Top Contact Bar */
+    .header-top-bar {
+        padding: 8px 12px !important;
+    }
+
+    .top-contact-links {
+        font-size: 0.78rem !important;
+        gap: 10px !important;
+    }
+
+    /* Typography scale down */
+    h1, .hero-title {
+        font-size: 1.9rem !important;
+        line-height: 1.25 !important;
+    }
+
+    h2, .section-title {
+        font-size: 1.5rem !important;
+    }
+
+    /* Domain search box */
+    .domain-search-box {
+        flex-direction: column !important;
+        padding: 12px !important;
+        gap: 12px !important;
+    }
+
+    .domain-search-input {
+        width: 100% !important;
+        font-size: 0.95rem !important;
+    }
+
+    .domain-search-btn {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+    /* Cart Checkout Modal Mobile */
+    .cart-modal-box {
+        padding: 20px 16px !important;
+        max-height: 94vh !important;
+        border-radius: 16px !important;
+    }
+
+    .cart-layout-grid {
+        grid-template-columns: 1fr !important;
+        gap: 18px !important;
+    }
+
+    /* Razorpay Modal Mobile */
+    #rzp-modal > div {
+        flex-direction: column !important;
+        max-height: 94vh !important;
+        overflow-y: auto !important;
+    }
+
+    #rzp-modal > div > div:first-child {
+        width: 100% !important;
+        min-width: 100% !important;
+        padding: 20px 16px !important;
+    }
+
+    #rzp-modal > div > div:last-child {
+        flex-direction: column !important;
+        max-height: none !important;
+    }
+
+    #rzp-modal .rzp-tab {
+        padding: 10px 12px !important;
+    }
+
+    /* WhatsApp Widget Position on Mobile */
+    #whatsapp-widget {
+        bottom: 20px !important;
+        right: 20px !important;
+    }
+
+    #whatsapp-btn {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    #whatsapp-btn svg {
+        width: 26px !important;
+        height: 26px !important;
+    }
+
+    #whatsapp-tooltip {
+        display: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, .hero-title {
+        font-size: 1.65rem !important;
+    }
+
+    .btn {
+        padding: 12px 20px !important;
+        font-size: 0.9rem !important;
+        width: 100% !important;
+        text-align: center !important;
+        justify-content: center !important;
+    }
+
+    .hero-cta-group {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .service-card-3d {
+        padding: 24px 18px !important;
+    }
+}
+
 /* Collapsible Compare Accordion Styles */
 .compare-accordion-group {
     max-width: 1050px;
