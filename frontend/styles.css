@@ -277,8 +277,7 @@ body {
     padding: 0;
     border-radius: 0;
     box-shadow: none;
-    filter: brightness(0) invert(1);
-    transition: transform 0.2s ease, filter 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .brand-logo-img:hover {
